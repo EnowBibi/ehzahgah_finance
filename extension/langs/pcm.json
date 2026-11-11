@@ -1,0 +1,769 @@
+{
+ "code": "pcm",
+ "name": "Cameroonian Pidgin English",
+ "validated": false,
+ "note": "Drafted by Claude for pipeline testing. NOT yet reviewed by a native speaker; Pidgin spelling varies, pick one convention.",
+ "keep": [
+  "EN",
+  "FR",
+  "AN",
+  "Amina",
+  "Amina Ngo Bell",
+  "Jean-Paul Mbarga",
+  "Safinum Pay",
+  "re:^CM[\\d\\s]+$",
+  "re:^SAF-\\d{4}-[A-Z0-9]+$"
+ ],
+ "months": [
+  {
+   "src": [
+    "janv.",
+    "Jan"
+   ],
+   "tgt": "Jan"
+  },
+  {
+   "src": [
+    "févr.",
+    "Feb"
+   ],
+   "tgt": "Feb"
+  },
+  {
+   "src": [
+    "mars",
+    "Mar"
+   ],
+   "tgt": "Mar"
+  },
+  {
+   "src": [
+    "avr.",
+    "Apr"
+   ],
+   "tgt": "Apr"
+  },
+  {
+   "src": [
+    "mai",
+    "May"
+   ],
+   "tgt": "May"
+  },
+  {
+   "src": [
+    "juin",
+    "Jun"
+   ],
+   "tgt": "Jun"
+  },
+  {
+   "src": [
+    "juil.",
+    "Jul"
+   ],
+   "tgt": "Jul"
+  },
+  {
+   "src": [
+    "août",
+    "Aug"
+   ],
+   "tgt": "Aug"
+  },
+  {
+   "src": [
+    "sept.",
+    "Sep"
+   ],
+   "tgt": "Sep"
+  },
+  {
+   "src": [
+    "oct.",
+    "Oct"
+   ],
+   "tgt": "Oct"
+  },
+  {
+   "src": [
+    "nov.",
+    "Nov"
+   ],
+   "tgt": "Nov"
+  },
+  {
+   "src": [
+    "déc.",
+    "Dec"
+   ],
+   "tgt": "Dec"
+  }
+ ],
+ "entries": [
+  {
+   "src": [
+    "Welcome back",
+    "Bon retour"
+   ],
+   "tgt": "Welcome bak"
+  },
+  {
+   "src": [
+    "Account balance",
+    "Solde du compte"
+   ],
+   "tgt": "Moni wey dey for your account"
+  },
+  {
+   "src": [
+    "Transfer money",
+    "Transférer de l'argent"
+   ],
+   "tgt": "Send moni"
+  },
+  {
+   "src": [
+    "View fees",
+    "Voir les frais"
+   ],
+   "tgt": "See di charge dem"
+  },
+  {
+   "src": [
+    "Transfer fees",
+    "Frais de transfert"
+   ],
+   "tgt": "Charge for send moni"
+  },
+  {
+   "src": [
+    "Transfers up to {1}",
+    "Transferts jusqu'à {1}"
+   ],
+   "tgt": "Sending up to {1}"
+  },
+  {
+   "src": [
+    "Transfers above {1}",
+    "Transferts au-dessus de {1}"
+   ],
+   "tgt": "Sending pass {1}"
+  },
+  {
+   "src": [
+    "Beneficiary name",
+    "Nom du bénéficiaire"
+   ],
+   "tgt": "Name of di pesin wey go receive"
+  },
+  {
+   "src": [
+    "Beneficiary account number",
+    "Numéro de compte du bénéficiaire"
+   ],
+   "tgt": "Account number of di pesin wey go receive"
+  },
+  {
+   "src": [
+    "Amount (XAF)",
+    "Montant (XAF)"
+   ],
+   "tgt": "How much (XAF)"
+  },
+  {
+   "src": [
+    "Enter amount",
+    "Saisir le montant"
+   ],
+   "tgt": "Put di amount"
+  },
+  {
+   "src": [
+    "Continue",
+    "Continuer"
+   ],
+   "tgt": "Continue"
+  },
+  {
+   "src": [
+    "Cancel",
+    "Annuler"
+   ],
+   "tgt": "Cancel"
+  },
+  {
+   "src": [
+    "Back",
+    "Retour"
+   ],
+   "tgt": "Go back"
+  },
+  {
+   "src": [
+    "Confirm transfer",
+    "Confirmer le transfert"
+   ],
+   "tgt": "Confirm di sending"
+  },
+  {
+   "src": [
+    "Transaction summary",
+    "Récapitulatif de la transaction"
+   ],
+   "tgt": "Summary of di transaction"
+  },
+  {
+   "src": [
+    "You are about to send {1} to {2}.",
+    "Vous êtes sur le point d'envoyer {1} à {2}."
+   ],
+   "tgt": "You wan send {1} to {2}."
+  },
+  {
+   "src": [
+    "Fee: {1}",
+    "Frais : {1}"
+   ],
+   "tgt": "Charge: {1}"
+  },
+  {
+   "src": [
+    "Total debited: {1}",
+    "Total débité : {1}"
+   ],
+   "tgt": "Total wey dem go take from your account: {1}"
+  },
+  {
+   "src": [
+    "Warning: never share your PIN with anyone.",
+    "Attention : ne partagez jamais votre code PIN avec personne."
+   ],
+   "tgt": "Warning: no ever tell anybody your PIN."
+  },
+  {
+   "src": [
+    "Error: insufficient balance.",
+    "Erreur : solde insuffisant."
+   ],
+   "tgt": "Problem: moni for your account no reach."
+  },
+  {
+   "src": [
+    "Transfer completed (simulated).",
+    "Transfert effectué (simulé)."
+   ],
+   "tgt": "Di sending don finish (na simulation)."
+  },
+  {
+   "src": [
+    "By continuing you accept the terms and conditions.",
+    "En continuant, vous acceptez les conditions générales."
+   ],
+   "tgt": "If you continue, you don accept di terms and conditions."
+  },
+  {
+   "id": "T001",
+   "src": [
+    "Environnement de test — données fictives, aucune transaction réelle.",
+    "Test environment — fictional data, no real transaction."
+   ],
+   "tgt": "Dis na test environment — di data na pretend, no real transaction dey happen."
+  },
+  {
+   "id": "T002",
+   "src": [
+    "Protocole de test",
+    "Test protocol"
+   ],
+   "tgt": "Test rules"
+  },
+  {
+   "id": "T003",
+   "src": [
+    "Retour au hackathon",
+    "Back to hackathon"
+   ],
+   "tgt": "Go back to di hackathon"
+  },
+  {
+   "id": "T004",
+   "src": [
+    "Banque en ligne",
+    "Online banking"
+   ],
+   "tgt": "Bank for internet"
+  },
+  {
+   "id": "T005",
+   "src": [
+    "Solde",
+    "Balance"
+   ],
+   "tgt": "Moni wey remain"
+  },
+  {
+   "id": "T006",
+   "src": [
+    "Frais",
+    "Fees"
+   ],
+   "tgt": "Charge dem"
+  },
+  {
+   "id": "T007",
+   "src": [
+    "Bénéficiaire",
+    "Beneficiary"
+   ],
+   "tgt": "Pesin wey go receive"
+  },
+  {
+   "id": "T008",
+   "src": [
+    "Récapitulatif",
+    "Summary"
+   ],
+   "tgt": "Summary"
+  },
+  {
+   "id": "T009",
+   "src": [
+    "Confirmation",
+    "Confirmation"
+   ],
+   "tgt": "Confirmation"
+  },
+  {
+   "id": "T010",
+   "src": [
+    "Votre compte",
+    "Your account"
+   ],
+   "tgt": "Your account"
+  },
+  {
+   "id": "T011",
+   "src": [
+    "Compte courant",
+    "Current account"
+   ],
+   "tgt": "Current account"
+  },
+  {
+   "id": "T012",
+   "src": [
+    "Solde disponible",
+    "Available balance"
+   ],
+   "tgt": "Moni wey you fit use now"
+  },
+  {
+   "id": "T013",
+   "src": [
+    "Sécurité",
+    "Security"
+   ],
+   "tgt": "Security"
+  },
+  {
+   "id": "T014",
+   "src": [
+    "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
+    "Always verify the beneficiary name and number before confirming a transfer."
+   ],
+   "tgt": "Always check di name and number of di pesin wey go receive before you confirm di transfer."
+  },
+  {
+   "id": "T015",
+   "src": [
+    "Connexion sécurisée",
+    "Secure connection"
+   ],
+   "tgt": "Safe connection"
+  },
+  {
+   "id": "T016",
+   "src": [
+    "Safinum Pay — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
+    "Safinum Pay — demonstration environment. Do not enter real personal data."
+   ],
+   "tgt": "Safinum Pay — na demo place. No put your real personal information."
+  },
+  {
+   "id": "T017",
+   "src": [
+    "Bonjour, {1}",
+    "Hello, {1}"
+   ],
+   "tgt": "How you dey, {1}"
+  },
+  {
+   "id": "T018",
+   "src": [
+    "Consultez votre solde et lancez un transfert en toute sécurité.",
+    "Check your balance and start a secure transfer."
+   ],
+   "tgt": "Check how much moni you get and start a safe transfer."
+  },
+  {
+   "id": "T019",
+   "src": [
+    "Numéro de compte : {1}",
+    "Account number : {1}"
+   ],
+   "tgt": "Account number : {1}"
+  },
+  {
+   "id": "T020",
+   "src": [
+    "Effectuer un transfert",
+    "Make a transfer"
+   ],
+   "tgt": "Send moni"
+  },
+  {
+   "id": "T021",
+   "src": [
+    "Consulter les frais",
+    "View fees"
+   ],
+   "tgt": "See di charges"
+  },
+  {
+   "id": "T022",
+   "src": [
+    "Transactions récentes",
+    "Recent transactions"
+   ],
+   "tgt": "Di latest transactions"
+  },
+  {
+   "id": "T023",
+   "src": [
+    "Paiement marchand",
+    "Merchant payment"
+   ],
+   "tgt": "Payment to seller"
+  },
+  {
+   "id": "T024",
+   "src": [
+    "Salaire reçu",
+    "Salary received"
+   ],
+   "tgt": "Salary don enter"
+  },
+  {
+   "id": "T025",
+   "src": [
+    "Transfert reçu",
+    "Transfer received"
+   ],
+   "tgt": "Moni wey dem send you"
+  },
+  {
+   "id": "T026",
+   "src": [
+    "Facture électricité",
+    "Electricity bill"
+   ],
+   "tgt": "Light bill"
+  },
+  {
+   "id": "T027",
+   "src": [
+    "Frais de transfert",
+    "Transfer fees"
+   ],
+   "tgt": "Charge for send moni"
+  },
+  {
+   "id": "T028",
+   "src": [
+    "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
+    "Choose the transfer type and amount. Fees are calculated automatically."
+   ],
+   "tgt": "Choose how you wan send di moni and di amount. Di charge go calculate by itself."
+  },
+  {
+   "id": "T029",
+   "src": [
+    "Type d'opération",
+    "Operation type"
+   ],
+   "tgt": "Type of operation"
+  },
+  {
+   "id": "T030",
+   "src": [
+    "Compte Safinum",
+    "Safinum account"
+   ],
+   "tgt": "Safinum account"
+  },
+  {
+   "id": "T031",
+   "src": [
+    "Mobile Money",
+    "Mobile Money"
+   ],
+   "tgt": "Mobile Money"
+  },
+  {
+   "id": "T032",
+   "src": [
+    "Autre banque",
+    "Other bank"
+   ],
+   "tgt": "Another bank"
+  },
+  {
+   "id": "T033",
+   "src": [
+    "Transfert instantané et gratuit",
+    "Instant, free transfer"
+   ],
+   "tgt": "Instant transfer, no charge"
+  },
+  {
+   "id": "T034",
+   "src": [
+    "Montant à envoyer",
+    "Amount to send"
+   ],
+   "tgt": "How much you wan send"
+  },
+  {
+   "id": "T035",
+   "src": [
+    "Fee"
+   ],
+   "tgt": "Charge"
+  },
+  {
+   "id": "T036",
+   "src": [
+    "Gratuit",
+    "Free"
+   ],
+   "tgt": "No charge"
+  },
+  {
+   "id": "T037",
+   "src": [
+    "Total à débiter",
+    "Total to debit"
+   ],
+   "tgt": "Total wey dem go comot for your account"
+  },
+  {
+   "id": "T038",
+   "src": [
+    "Solde après opération",
+    "Balance after transfer"
+   ],
+   "tgt": "Moni wey go remain afta di transfer"
+  },
+  {
+   "id": "T039",
+   "src": [
+    "Retour",
+    "Back"
+   ],
+   "tgt": "Go back"
+  },
+  {
+   "id": "T040",
+   "src": [
+    "Continuer",
+    "Continue"
+   ],
+   "tgt": "Continue"
+  },
+  {
+   "id": "T041",
+   "src": [
+    "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
+    "Enter the recipient details. Always verify the number before confirming."
+   ],
+   "tgt": "Enter di details of di pesin wey go receive. Always check di number before you confirm."
+  },
+  {
+   "id": "T042",
+   "src": [
+    "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
+    "This beneficiary has never been used on this account. Verify the number before continuing."
+   ],
+   "tgt": "You never use dis pesin for dis account before. Check di number well before you continue."
+  },
+  {
+   "id": "T043",
+   "src": [
+    "Nom du bénéficiaire",
+    "Beneficiary name"
+   ],
+   "tgt": "Name of di pesin wey go receive"
+  },
+  {
+   "id": "T044",
+   "src": [
+    "Numéro de téléphone",
+    "Phone number"
+   ],
+   "tgt": "Phone number"
+  },
+  {
+   "id": "T045",
+   "src": [
+    "Motif du transfert",
+    "Transfer reason"
+   ],
+   "tgt": "Why you dey send di moni"
+  },
+  {
+   "id": "T046",
+   "src": [
+    "Note (optionnel)",
+    "Note (optional)"
+   ],
+   "tgt": "Note (no be must)"
+  },
+  {
+   "id": "T047",
+   "src": [
+    "J'ai vérifié le nom et le numéro du bénéficiaire.",
+    "I have verified the beneficiary name and phone number."
+   ],
+   "tgt": "I don check di name and phone number of di pesin wey go receive."
+  },
+  {
+   "id": "T048",
+   "src": [
+    "Vérifiez les informations avant de confirmer le transfert.",
+    "Check the details before confirming the transfer."
+   ],
+   "tgt": "Check di details before you confirm di transfer."
+  },
+  {
+   "id": "T049",
+   "src": [
+    "Montant",
+    "Amount"
+   ],
+   "tgt": "Amount"
+  },
+  {
+   "id": "T050",
+   "src": [
+    "Total débité",
+    "Total debited"
+   ],
+   "tgt": "Total wey dem don comot"
+  },
+  {
+   "id": "T051",
+   "src": [
+    "Téléphone",
+    "Phone"
+   ],
+   "tgt": "Phone"
+  },
+  {
+   "id": "T052",
+   "src": [
+    "Référence",
+    "Reference"
+   ],
+   "tgt": "Reference"
+  },
+  {
+   "id": "T053",
+   "src": [
+    "Opération",
+    "Operation"
+   ],
+   "tgt": "Operation"
+  },
+  {
+   "id": "T054",
+   "src": [
+    "Je confirme que les informations ci-dessus sont correctes.",
+    "I confirm the information above is correct."
+   ],
+   "tgt": "I confirm say di information wey dey up na correct."
+  },
+  {
+   "id": "T055",
+   "src": [
+    "Modifier",
+    "Edit"
+   ],
+   "tgt": "Change"
+  },
+  {
+   "id": "T056",
+   "src": [
+    "Confirmer le transfert",
+    "Confirm transfer"
+   ],
+   "tgt": "Confirm and send di moni"
+  },
+  {
+   "id": "T057",
+   "src": [
+    "Transfert effectué",
+    "Transfer completed"
+   ],
+   "tgt": "Di transfer don finish"
+  },
+  {
+   "id": "T058",
+   "src": [
+    "Votre transfert a été envoyé avec succès.",
+    "Your transfer has been sent successfully."
+   ],
+   "tgt": "Dem don send your transfer well."
+  },
+  {
+   "id": "T059",
+   "src": [
+    "Statut",
+    "Status"
+   ],
+   "tgt": "Status"
+  },
+  {
+   "id": "T060",
+   "src": [
+    "Succès",
+    "Success"
+   ],
+   "tgt": "E don work"
+  },
+  {
+   "id": "T061",
+   "src": [
+    "Nouveau transfert",
+    "New transfer"
+   ],
+   "tgt": "New transfer"
+  },
+  {
+   "id": "X1",
+   "src": [
+    "Bonjour,",
+    "Hello,"
+   ],
+   "tgt": "How you dey,"
+  },
+  {
+   "id": "X2",
+   "src": [
+    "Numéro de compte :",
+    "Account number :"
+   ],
+   "tgt": "Account number :"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{--ink:#12312b;--paper:#f7faf8;--line:#cfdcd6;--amber:#b45309;--red:#b91c1c}
+  body{width:340px;margin:0;padding:14px;background:var(--paper);color:var(--ink);font:14px/1.4 system-ui,sans-serif}
+  h1{font-size:16px;margin:0 0 10px}
+  label{display:block;margin:8px 0 3px;font-weight:600}
+  select,input[type=text]{width:100%;box-sizing:border-box;padding:6px;border:1px solid var(--line);border-radius:6px;font:inherit}
+  .row{display:flex;gap:8px;align-items:center;margin:6px 0}
+  .badge{font-size:12px;padding:2px 6px;border-radius:5px;background:#fef3c7;color:var(--amber)}
+  .badge.ok{background:#d1fae5;color:#065f46}
+  .stats{margin:10px 0;padding:8px;border:1px solid var(--line);border-radius:8px}
+  .item{border-top:1px solid var(--line);padding:8px 0}
+  .src{font-weight:600;word-break:break-word}
+  .err{color:var(--red);font-size:12px;min-height:14px}
+  button{font:inherit;border:0;border-radius:6px;padding:5px 10px;background:var(--ink);color:#fff;cursor:pointer;margin-top:4px}
+  button.alt{background:#e8f3ef;color:var(--ink)}
+  button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #d97706}
+</style>
+</head>
+<body>
+  <h1>LinguaFin</h1>
+  <label for="lang">Language</label>
+  <select id="lang"></select>
+  <div class="row"><span id="badge" class="badge"></span></div>
+  <div class="row"><input type="checkbox" id="enabled"><label for="enabled" style="margin:0">Translate this page</label></div>
+  <div class="row"><input type="checkbox" id="orig"><label for="orig" style="margin:0">Show original text</label></div>
+  <div class="stats" id="stats">Open a normal web page to see live stats.</div>
+  <div id="unknown"></div>
+  <button class="alt" id="dump">Export all page strings (CSV)</button>
+  <button class="alt" id="export">Copy my taught entries (JSON)</button>
+  <script src="engine.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "code": "xxx",
+  "name": "Your language name",
+  "validated": false,
+  "entries": [
+    { "src": ["Account balance", "Solde du compte"], "tgt": "" },
+    { "src": ["You are about to send {1} to {2}.", "Vous êtes sur le point d'envoyer {1} à {2}."], "tgt": "" }
+  ]
+}

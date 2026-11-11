@@ -1,0 +1,608 @@
+{
+ "code": "hau",
+ "name": "Hausa",
+ "validated": false,
+ "note": "Hausa strings supplied by the team. NOT yet reviewed by a native-speaker linguist.",
+ "keep": [
+  "EN",
+  "FR",
+  "AN",
+  "Amina",
+  "Amina Ngo Bell",
+  "Jean-Paul Mbarga",
+  "Safinum Pay",
+  "re:^CM[\\d\\s]+$",
+  "re:^SAF-\\d{4}-[A-Z0-9]+$"
+ ],
+ "months": [
+  {
+   "src": [
+    "janv.",
+    "Jan"
+   ],
+   "tgt": "Jan"
+  },
+  {
+   "src": [
+    "févr.",
+    "Feb"
+   ],
+   "tgt": "Fab"
+  },
+  {
+   "src": [
+    "mars",
+    "Mar"
+   ],
+   "tgt": "Mar"
+  },
+  {
+   "src": [
+    "avr.",
+    "Apr"
+   ],
+   "tgt": "Afi"
+  },
+  {
+   "src": [
+    "mai",
+    "May"
+   ],
+   "tgt": "May"
+  },
+  {
+   "src": [
+    "juin",
+    "Jun"
+   ],
+   "tgt": "Yun"
+  },
+  {
+   "src": [
+    "juil.",
+    "Jul"
+   ],
+   "tgt": "Yul"
+  },
+  {
+   "src": [
+    "août",
+    "Aug"
+   ],
+   "tgt": "Agu"
+  },
+  {
+   "src": [
+    "sept.",
+    "Sep"
+   ],
+   "tgt": "Sat"
+  },
+  {
+   "src": [
+    "oct.",
+    "Oct"
+   ],
+   "tgt": "Okt"
+  },
+  {
+   "src": [
+    "nov.",
+    "Nov"
+   ],
+   "tgt": "Nuw"
+  },
+  {
+   "src": [
+    "déc.",
+    "Dec"
+   ],
+   "tgt": "Dis"
+  }
+ ],
+ "entries": [
+  {
+   "id": "T001",
+   "src": [
+    "Environnement de test — données fictives, aucune transaction réelle.",
+    "Test environment — fictional data, no real transaction."
+   ],
+   "tgt": "Muhallin gwaji — bayanan ƙage ne, babu ainihin hada-hadar kuɗi."
+  },
+  {
+   "id": "T002",
+   "src": [
+    "Protocole de test",
+    "Test protocol"
+   ],
+   "tgt": "Tsarin gwaji"
+  },
+  {
+   "id": "T003",
+   "src": [
+    "Retour au hackathon",
+    "Back to hackathon"
+   ],
+   "tgt": "Komawa zuwa hackathon"
+  },
+  {
+   "id": "T004",
+   "src": [
+    "Banque en ligne",
+    "Online banking"
+   ],
+   "tgt": "Banki na yanar gizo"
+  },
+  {
+   "id": "T005",
+   "src": [
+    "Solde",
+    "Balance"
+   ],
+   "tgt": "Ragowar kuɗi"
+  },
+  {
+   "id": "T006",
+   "src": [
+    "Frais",
+    "Fees"
+   ],
+   "tgt": "Kuɗin caji"
+  },
+  {
+   "id": "T007",
+   "src": [
+    "Bénéficiaire",
+    "Beneficiary"
+   ],
+   "tgt": "Mai karɓa"
+  },
+  {
+   "id": "T008",
+   "src": [
+    "Récapitulatif",
+    "Summary"
+   ],
+   "tgt": "Taƙaitawa"
+  },
+  {
+   "id": "T009",
+   "src": [
+    "Confirmation",
+    "Confirmation"
+   ],
+   "tgt": "Tabbatarwa"
+  },
+  {
+   "id": "T010",
+   "src": [
+    "Votre compte",
+    "Your account"
+   ],
+   "tgt": "Asusun ku"
+  },
+  {
+   "id": "T011",
+   "src": [
+    "Compte courant",
+    "Current account"
+   ],
+   "tgt": "Asusun ajiya na yau da kullum"
+  },
+  {
+   "id": "T012",
+   "src": [
+    "Solde disponible",
+    "Available balance"
+   ],
+   "tgt": "Ragowar kuɗi da ake iya amfani da su"
+  },
+  {
+   "id": "T013",
+   "src": [
+    "Sécurité",
+    "Security"
+   ],
+   "tgt": "Tsaro"
+  },
+  {
+   "id": "T014",
+   "src": [
+    "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
+    "Always verify the beneficiary name and number before confirming a transfer."
+   ],
+   "tgt": "Ku riƙa tabbatar da sunan mai karɓa da lambarsa kafin ku tabbatar da tura kuɗi."
+  },
+  {
+   "id": "T015",
+   "src": [
+    "Connexion sécurisée",
+    "Secure connection"
+   ],
+   "tgt": "Haɗi mai tsaro"
+  },
+  {
+   "id": "T016",
+   "src": [
+    "Safinum Pay — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
+    "Safinum Pay — demonstration environment. Do not enter real personal data."
+   ],
+   "tgt": "Safinum Pay — muhallin nuni ne. Kada ku shigar da ainihin bayanan kanku."
+  },
+  {
+   "id": "T017",
+   "src": [
+    "Bonjour, {1}",
+    "Hello, {1}"
+   ],
+   "tgt": "Sannu, {1}"
+  },
+  {
+   "id": "T018",
+   "src": [
+    "Consultez votre solde et lancez un transfert en toute sécurité.",
+    "Check your balance and start a secure transfer."
+   ],
+   "tgt": "Ku duba ragowar kuɗin ku kuma ku fara tura kuɗi cikin tsaro."
+  },
+  {
+   "id": "T019",
+   "src": [
+    "Numéro de compte : {1}",
+    "Account number : {1}"
+   ],
+   "tgt": "Lambar asusu : {1}"
+  },
+  {
+   "id": "T020",
+   "src": [
+    "Effectuer un transfert",
+    "Make a transfer"
+   ],
+   "tgt": "Tura kuɗi"
+  },
+  {
+   "id": "T021",
+   "src": [
+    "Consulter les frais",
+    "View fees"
+   ],
+   "tgt": "Duba kuɗin caji"
+  },
+  {
+   "id": "T022",
+   "src": [
+    "Transactions récentes",
+    "Recent transactions"
+   ],
+   "tgt": "Hada-hadar kwanan nan"
+  },
+  {
+   "id": "T023",
+   "src": [
+    "Paiement marchand",
+    "Merchant payment"
+   ],
+   "tgt": "Biyan ɗan kasuwa"
+  },
+  {
+   "id": "T024",
+   "src": [
+    "Salaire reçu",
+    "Salary received"
+   ],
+   "tgt": "An karɓi albashi"
+  },
+  {
+   "id": "T025",
+   "src": [
+    "Transfert reçu",
+    "Transfer received"
+   ],
+   "tgt": "An karɓi kuɗi"
+  },
+  {
+   "id": "T026",
+   "src": [
+    "Facture électricité",
+    "Electricity bill"
+   ],
+   "tgt": "Kuɗin wutar lantarki"
+  },
+  {
+   "id": "T027",
+   "src": [
+    "Frais de transfert",
+    "Transfer fees"
+   ],
+   "tgt": "Kuɗin caji na tura kuɗi"
+  },
+  {
+   "id": "T028",
+   "src": [
+    "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
+    "Choose the transfer type and amount. Fees are calculated automatically."
+   ],
+   "tgt": "Ku zaɓi nau'in tura kuɗi da adadi. Ana lissafa kuɗin caji kai tsaye."
+  },
+  {
+   "id": "T029",
+   "src": [
+    "Type d'opération",
+    "Operation type"
+   ],
+   "tgt": "Nau'in aiki"
+  },
+  {
+   "id": "T030",
+   "src": [
+    "Compte Safinum",
+    "Safinum account"
+   ],
+   "tgt": "Asusun Safinum"
+  },
+  {
+   "id": "T031",
+   "src": [
+    "Mobile Money",
+    "Mobile Money"
+   ],
+   "tgt": "Mobile Money"
+  },
+  {
+   "id": "T032",
+   "src": [
+    "Autre banque",
+    "Other bank"
+   ],
+   "tgt": "Wani banki"
+  },
+  {
+   "id": "T033",
+   "src": [
+    "Transfert instantané et gratuit",
+    "Instant, free transfer"
+   ],
+   "tgt": "Tura kuɗi nan take, kyauta"
+  },
+  {
+   "id": "T034",
+   "src": [
+    "Montant à envoyer",
+    "Amount to send"
+   ],
+   "tgt": "Adadin da za a aika"
+  },
+  {
+   "id": "T035",
+   "src": [
+    "Fee"
+   ],
+   "tgt": "Kuɗin caji"
+  },
+  {
+   "id": "T036",
+   "src": [
+    "Gratuit",
+    "Free"
+   ],
+   "tgt": "Kyauta"
+  },
+  {
+   "id": "T037",
+   "src": [
+    "Total à débiter",
+    "Total to debit"
+   ],
+   "tgt": "Jimillar da za a cire"
+  },
+  {
+   "id": "T038",
+   "src": [
+    "Solde après opération",
+    "Balance after transfer"
+   ],
+   "tgt": "Ragowar kuɗi bayan tura kuɗi"
+  },
+  {
+   "id": "T039",
+   "src": [
+    "Retour",
+    "Back"
+   ],
+   "tgt": "Koma baya"
+  },
+  {
+   "id": "T040",
+   "src": [
+    "Continuer",
+    "Continue"
+   ],
+   "tgt": "Ci gaba"
+  },
+  {
+   "id": "T041",
+   "src": [
+    "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
+    "Enter the recipient details. Always verify the number before confirming."
+   ],
+   "tgt": "Ku shigar da bayanan mai karɓa. Ku tabbatar da lambar kafin ku ci gaba."
+  },
+  {
+   "id": "T042",
+   "src": [
+    "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
+    "This beneficiary has never been used on this account. Verify the number before continuing."
+   ],
+   "tgt": "Ba a taɓa amfani da wannan mai karɓa a wannan asusun ba. Ku yi hankali, ku tabbatar da lambar kafin ku ci gaba."
+  },
+  {
+   "id": "T043",
+   "src": [
+    "Nom du bénéficiaire",
+    "Beneficiary name"
+   ],
+   "tgt": "Sunan mai karɓa"
+  },
+  {
+   "id": "T044",
+   "src": [
+    "Numéro de téléphone",
+    "Phone number"
+   ],
+   "tgt": "Lambar waya"
+  },
+  {
+   "id": "T045",
+   "src": [
+    "Motif du transfert",
+    "Transfer reason"
+   ],
+   "tgt": "Dalilin tura kuɗi"
+  },
+  {
+   "id": "T046",
+   "src": [
+    "Note (optionnel)",
+    "Note (optional)"
+   ],
+   "tgt": "Bayani (ba dole ba ne)"
+  },
+  {
+   "id": "T047",
+   "src": [
+    "J'ai vérifié le nom et le numéro du bénéficiaire.",
+    "I have verified the beneficiary name and phone number."
+   ],
+   "tgt": "Na tabbatar da sunan mai karɓa da lambar wayarsa."
+  },
+  {
+   "id": "T048",
+   "src": [
+    "Vérifiez les informations avant de confirmer le transfert.",
+    "Check the details before confirming the transfer."
+   ],
+   "tgt": "Ku duba bayanan kafin ku tabbatar da tura kuɗi."
+  },
+  {
+   "id": "T049",
+   "src": [
+    "Montant",
+    "Amount"
+   ],
+   "tgt": "Adadi"
+  },
+  {
+   "id": "T050",
+   "src": [
+    "Total débité",
+    "Total debited"
+   ],
+   "tgt": "Jimillar da aka cire"
+  },
+  {
+   "id": "T051",
+   "src": [
+    "Téléphone",
+    "Phone"
+   ],
+   "tgt": "Waya"
+  },
+  {
+   "id": "T052",
+   "src": [
+    "Référence",
+    "Reference"
+   ],
+   "tgt": "Lambar tunani"
+  },
+  {
+   "id": "T053",
+   "src": [
+    "Opération",
+    "Operation"
+   ],
+   "tgt": "Aiki"
+  },
+  {
+   "id": "T054",
+   "src": [
+    "Je confirme que les informations ci-dessus sont correctes.",
+    "I confirm the information above is correct."
+   ],
+   "tgt": "Ina tabbatar da cewa bayanan da ke sama daidai ne."
+  },
+  {
+   "id": "T055",
+   "src": [
+    "Modifier",
+    "Edit"
+   ],
+   "tgt": "Gyara"
+  },
+  {
+   "id": "T056",
+   "src": [
+    "Confirmer le transfert",
+    "Confirm transfer"
+   ],
+   "tgt": "Tabbatar kuma tura kuɗi yanzu"
+  },
+  {
+   "id": "T057",
+   "src": [
+    "Transfert effectué",
+    "Transfer completed"
+   ],
+   "tgt": "An kammala tura kuɗi"
+  },
+  {
+   "id": "T058",
+   "src": [
+    "Votre transfert a été envoyé avec succès.",
+    "Your transfer has been sent successfully."
+   ],
+   "tgt": "An yi nasarar tura kuɗin ku."
+  },
+  {
+   "id": "T059",
+   "src": [
+    "Statut",
+    "Status"
+   ],
+   "tgt": "Matsayi"
+  },
+  {
+   "id": "T060",
+   "src": [
+    "Succès",
+    "Success"
+   ],
+   "tgt": "An yi nasara"
+  },
+  {
+   "id": "T061",
+   "src": [
+    "Nouveau transfert",
+    "New transfer"
+   ],
+   "tgt": "Sabuwar tura kuɗi"
+  },
+  {
+   "id": "X1",
+   "src": [
+    "Bonjour,",
+    "Hello,"
+   ],
+   "tgt": "Sannu,"
+  },
+  {
+   "id": "X2",
+   "src": [
+    "Numéro de compte :",
+    "Account number :"
+   ],
+   "tgt": "Lambar asusu :"
+  }
+ ]
+}

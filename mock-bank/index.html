@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo Bank (simulated)</title>
+<style>
+  :root{--navy:#0f2a4a;--line:#d5dce5;--bg:#f3f5f8;--red:#b91c1c}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:#1b2430;font:16px/1.5 system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+  main{max-width:520px;margin:24px auto;padding:0 16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:16px}
+  .amount{font-size:32px;font-weight:700}
+  label{display:block;margin:12px 0 4px;font-weight:600}
+  input{width:100%;padding:9px;border:1px solid var(--line);border-radius:6px;font:inherit}
+  button{font:inherit;padding:9px 16px;border:0;border-radius:6px;background:var(--navy);color:#fff;cursor:pointer;margin:12px 8px 0 0}
+  button.sec{background:#e3e9f0;color:var(--navy)}
+  table{width:100%;border-collapse:collapse} td{padding:8px 0;border-top:1px solid var(--line)} td:last-child{text-align:right;font-weight:600}
+  .error{color:var(--red);font-weight:600}
+  .warning{background:#fff4e5;border-left:4px solid #d97706;padding:8px 10px;margin-top:12px}
+  .small{font-size:13px;color:#51606f}
+  .demo{background:#fffbe6;border:1px dashed #d4b106;border-radius:8px;padding:10px;font-size:13px}
+  .demo button{padding:5px 10px;font-size:13px;margin:6px 6px 0 0}
+</style>
+</head>
+<body>
+<header>
+  <strong data-lf-skip>Demo Bank (simulated)</strong>
+</header>
+<main>
+  <div id="app"></div>
+  <div id="notices"></div>
+  <div class="demo" data-lf-skip>
+    <strong>Demo controls (not translated)</strong><br>
+    <button id="lang" class="sec">Switch to French</button>
+    <button id="inject" class="sec">Inject new message</button>
+  </div>
+</main>
+
+<script>
+const S = {
+  en: {
+    welcome:"Welcome back", balance:"Account balance", send:"Transfer money", fees:"View fees",
+    feesTitle:"Transfer fees", upTo:a=>`Transfers up to ${a}`, above:a=>`Transfers above ${a}`,
+    benName:"Beneficiary name", benAcc:"Beneficiary account number", amountLbl:"Amount (XAF)", amountPh:"Enter amount",
+    cont:"Continue", cancel:"Cancel", back:"Back", confirm:"Confirm transfer", summary:"Transaction summary",
+    about:(a,n)=>`You are about to send ${a} to ${n}.`, fee:a=>`Fee: ${a}`, total:a=>`Total debited: ${a}`,
+    pin:"Warning: never share your PIN with anyone.", insufficient:"Error: insufficient balance.",
+    done:"Transfer completed (simulated).", terms:"By continuing you accept the terms and conditions.",
+    n1:"Your session will expire in 5 minutes.", n2:"Security alert: suspicious login detected from a new device.",
+    toFr:"Switch to French", locale:"en-US"
+  },
+  fr: {
+    welcome:"Bon retour", balance:"Solde du compte", send:"Transférer de l'argent", fees:"Voir les frais",
+    feesTitle:"Frais de transfert", upTo:a=>`Transferts jusqu'à ${a}`, above:a=>`Transferts au-dessus de ${a}`,
+    benName:"Nom du bénéficiaire", benAcc:"Numéro de compte du bénéficiaire", amountLbl:"Montant (XAF)", amountPh:"Saisir le montant",
+    cont:"Continuer", cancel:"Annuler", back:"Retour", confirm:"Confirmer le transfert", summary:"Récapitulatif de la transaction",
+    about:(a,n)=>`Vous êtes sur le point d'envoyer ${a} à ${n}.`, fee:a=>`Frais : ${a}`, total:a=>`Total débité : ${a}`,
+    pin:"Attention : ne partagez jamais votre code PIN avec personne.", insufficient:"Erreur : solde insuffisant.",
+    done:"Transfert effectué (simulé).", terms:"En continuant, vous acceptez les conditions générales.",
+    n1:"Votre session expirera dans 5 minutes.", n2:"Alerte de sécurité : connexion suspecte détectée depuis un nouvel appareil.",
+    toFr:"Passer en anglais", locale:"fr-FR"
+  }
+};
+let lang = "en", screen = "home", balance = 150000, draft = {name:"", acc:"", amount:0}, injected = 0;
+const t = () => S[lang];
+const money = n => n.toLocaleString(t().locale) + " XAF";
+const feeFor = a => (a <= 50000 ? 500 : 1000);
+const app = document.getElementById("app");
+
+function el(tag, text, attrs = {}) {
+  const e = document.createElement(tag);
+  if (text != null) e.textContent = text;
+  Object.entries(attrs).forEach(([k, v]) => e.setAttribute(k, v));
+  return e;
+}
+function card(...kids) { const c = el("div", null, {class:"card"}); kids.forEach(k => c.append(k)); return c; }
+function btn(text, fn, cls = "") { const b = el("button", text, cls ? {class:cls} : {}); b.onclick = fn; return b; }
+function go(s) { screen = s; render(); }
+
+function render() {
+  const T = t();
+  app.replaceChildren();
+  if (screen === "home") {
+    app.append(
+      card(el("h2", T.welcome), el("div", T.balance, {class:"small"}), el("div", money(balance), {class:"amount"}),
+        btn(T.send, () => go("form")), btn(T.fees, () => go("fees"), "sec")),
+      el("p", T.terms, {class:"small"})
+    );
+  } else if (screen === "fees") {
+    const tbl = el("table");
+    [[T.upTo(money(50000)), money(500)], [T.above(money(50000)), money(1000)]].forEach(([a, b]) => {
+      const tr = el("tr"); tr.append(el("td", a), el("td", b)); tbl.append(tr);
+    });
+    app.append(card(el("h2", T.feesTitle), tbl, btn(T.back, () => go("home"), "sec")));
+  } else if (screen === "form") {
+    const name = el("input", null, {id:"name", type:"text", value:draft.name});
+    const acc = el("input", null, {id:"acc", type:"text", value:draft.acc});
+    const amt = el("input", null, {id:"amt", type:"text", placeholder:T.amountPh, value:draft.amount || ""});
+    const lb = (txt, f) => el("label", txt, {for:f});
+    app.append(card(
+      el("h2", T.send),
+      lb(T.benName, "name"), name, lb(T.benAcc, "acc"), acc, lb(T.amountLbl, "amt"), amt,
+      el("div", T.pin, {class:"warning"}),
+      btn(T.cont, () => {
+        draft = {name:name.value || "Jean Mballa", acc:acc.value || "677123456", amount:parseInt((amt.value || "25000").replace(/\D/g, ""), 10)};
+        go(draft.amount + feeFor(draft.amount) > balance ? "error" : "summary");
+      }),
+      btn(T.cancel, () => go("home"), "sec")
+    ));
+  } else if (screen === "summary") {
+    const f = feeFor(draft.amount);
+    app.append(card(
+      el("h2", T.summary),
+      el("p", T.about(money(draft.amount), draft.name)),
+      el("p", T.fee(money(f))),
+      el("p", T.total(money(draft.amount + f)), {class:"amount", style:"font-size:20px"}),
+      el("p", T.terms, {class:"small"}),
+      el("div", T.pin, {class:"warning"}),
+      btn(T.confirm, () => { balance -= draft.amount + f; go("done"); }),
+      btn(T.back, () => go("form"), "sec")
+    ));
+  } else if (screen === "error") {
+    app.append(card(el("p", T.insufficient, {class:"error", role:"alert"}), btn(T.back, () => go("form"), "sec")));
+  } else if (screen === "done") {
+    app.append(card(el("p", T.done), el("div", money(balance), {class:"amount"}), btn(T.back, () => go("home"), "sec")));
+  }
+}
+
+document.getElementById("lang").onclick = e => {
+  lang = lang === "en" ? "fr" : "en";
+  e.target.textContent = t().toFr;
+  render();
+};
+document.getElementById("inject").onclick = () => {
+  const key = injected++ % 2 === 0 ? "n1" : "n2";
+  const n = el("div", t()[key], {class: key === "n2" ? "error card" : "card", role:"alert"});
+  document.getElementById("notices").append(n);
+};
+render();
+</script>
+</body>
+</html>
