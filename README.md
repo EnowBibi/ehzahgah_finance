@@ -1,3 +1,7 @@
+# ehzahgah_finance
+
+EHZAHGAH FINANCE is a solution to make digital financial services accessible in Cameroon's national languages.
+
 # Ehzahgah_finance: setup
 
 ## 1. Load the extension (Chrome / Edge / Brave)
