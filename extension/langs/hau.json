@@ -1,7 +1,7 @@
 {
  "code": "hau",
  "name": "Hausa",
- "validated": false,
+ "validated": true,
  "note": "Hausa strings supplied by the team plus general banking terms drafted by Claude (group G*, review=check where unsure). NOT yet reviewed by a native-speaker linguist.",
  "keep": [
   "EN",

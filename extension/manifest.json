@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Ehzahgah_finance",
+  "name": "EHZAHGAH FINANCE",
   "version": "0.1.0",
   "description": "Makes digital financial interfaces understandable in Cameroonian national languages, without touching the site's source code.",
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
   "permissions": ["storage", "activeTab"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [
@@ -14,7 +20,8 @@
     }
   ],
   "action": {
-    "default_title": "Ehzahgah_finance",
+    "default_title": "EHZAHGAH FINANCE",
+    "default_icon": "logo.png",
     "default_popup": "popup.html"
   }
 }

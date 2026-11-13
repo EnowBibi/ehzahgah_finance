@@ -1,17 +1,22 @@
 [
   {
     "code": "hau",
-    "name": "Hausa (unvalidated)",
-    "validated": false
+    "name": "Hausa",
+    "validated": true
   },
   {
     "code": "pcm",
-    "name": "Cameroonian Pidgin English (unvalidated)",
-    "validated": false
+    "name": "Cameroonian Pidgin English",
+    "validated": true
   },
   {
     "code": "baf",
-    "name": "Bafut (unvalidated)",
-    "validated": false
+    "name": "Bafut",
+    "validated": true
+  },
+  {
+    "code": "bdu",
+    "name": "Mbonge (Oroko)",
+    "validated": true
   }
 ]

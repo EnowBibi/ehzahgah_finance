@@ -1,4 +1,4 @@
-// LinguaFin content script: runs inside the page, translates text at runtime,
+// EHZAHGAH FINANCE content script: runs inside the page, translates text at runtime,
 // never touches the site's source code, and keeps the original text for every change.
 (() => {
   if (window.__lfLoaded) return;
@@ -152,7 +152,7 @@
         button:focus-visible{outline:2px solid #fcd34d}
       </style>
       <div class="bar" role="status">
-        <span class="n" id="name">LinguaFin</span>
+        <span class="n" id="name">EHZAHGAH FINANCE</span>
         <span id="ok" title="Translated"></span>
         <span class="u" id="unk" title="Not translated yet"></span>
         <span class="b" id="blk" title="Blocked by Integrity Guard"></span>
@@ -169,7 +169,7 @@
     if (!bar) return;
     const s = stats();
     const set = (id, t) => (bar.getElementById(id).textContent = t);
-    set("name", s.enabled ? `LinguaFin: ${s.lang}${s.validated ? "" : " (unvalidated)"}` : "LinguaFin off");
+    set("name", s.enabled ? `EHZAHGAH FINANCE: ${s.lang}${s.validated ? "" : " (unvalidated)"}` : "EHZAHGAH FINANCE off");
     set("ok", `✓ ${s.ok}`);
     set("unk", s.unknown.length ? `? ${s.unknown.length}` : "");
     set("blk", s.blocked ? `⚠ ${s.blocked}` : "");

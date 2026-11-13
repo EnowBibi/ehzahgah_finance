@@ -1,4 +1,4 @@
-// LinguaFin translation engine. No browser APIs here, so the popup can reuse it.
+// EHZAHGAH FINANCE translation engine. No browser APIs here, so the popup can reuse it.
 // Pipeline: exact glossary match -> template match (with {1},{2}... slots) -> "unknown".
 // Slots are copied verbatim into the output, so amounts / names are never re-written.
 var LF = (() => {

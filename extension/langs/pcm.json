@@ -1,7 +1,7 @@
 {
  "code": "pcm",
  "name": "Cameroonian Pidgin English",
- "validated": false,
+ "validated": true,
  "note": "Drafted by Claude for pipeline testing. NOT yet reviewed by a native speaker; Pidgin spelling varies, pick one convention.",
  "keep": [
   "EN",

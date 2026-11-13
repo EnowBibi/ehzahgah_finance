@@ -12,7 +12,7 @@ async function refresh() {
   try { s = await chrome.tabs.sendMessage(tab.id, { type: "stats" }); } catch (e) {}
   const box = $("stats"), list = $("unknown");
   list.innerHTML = "";
-  if (!s) { box.textContent = "LinguaFin isn't active on this tab. Reload the page (it can't run on chrome:// pages)."; return; }
+  if (!s) { box.textContent = "EHZAHGAH FINANCE isn't active on this tab. Reload the page (it can't run on chrome:// pages)."; return; }
   box.textContent = `✓ ${s.ok} translated · ? ${s.unknown.length} unknown · ⚠ ${s.blocked} blocked by Integrity Guard`;
 
   for (const text of s.unknown) {

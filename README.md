@@ -1,15 +1,15 @@
-# ehzahgah_finance
+# EHZAHGAH FINANCE
 
 EHZAHGAH FINANCE is a solution to make digital financial services accessible in Cameroon's national languages.
 
-# Ehzahgah_finance: setup
+# EHZAHGAH FINANCE: setup
 
 ## 1. Load the extension (Chrome / Edge / Brave)
 
 1. Open `chrome://extensions`
 2. Turn on **Developer mode** (top right)
 3. Click **Load unpacked** and pick the `extension/` folder
-4. Pin the Ehzahgah_finance icon from the puzzle-piece menu
+4. Pin the EHZAHGAH FINANCE icon from the puzzle-piece menu
 
 After any code change: click the refresh icon on the extension card, then reload the page you're testing.
 
