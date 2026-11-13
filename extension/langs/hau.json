@@ -2,7 +2,7 @@
  "code": "hau",
  "name": "Hausa",
  "validated": false,
- "note": "Hausa strings supplied by the team. NOT yet reviewed by a native-speaker linguist.",
+ "note": "Hausa strings supplied by the team plus general banking terms drafted by Claude (group G*, review=check where unsure). NOT yet reviewed by a native-speaker linguist.",
  "keep": [
   "EN",
   "FR",
@@ -15,6 +15,102 @@
   "re:^SAF-\\d{4}-[A-Z0-9]+$"
  ],
  "months": [
+  {
+   "src": [
+    "janvier",
+    "January"
+   ],
+   "tgt": "Janairu",
+   "full": true
+  },
+  {
+   "src": [
+    "février",
+    "February"
+   ],
+   "tgt": "Faburairu",
+   "full": true
+  },
+  {
+   "src": [
+    "mars",
+    "March"
+   ],
+   "tgt": "Maris",
+   "full": true
+  },
+  {
+   "src": [
+    "avril",
+    "April"
+   ],
+   "tgt": "Afrilu",
+   "full": true
+  },
+  {
+   "src": [
+    "mai",
+    "May"
+   ],
+   "tgt": "Mayu",
+   "full": true
+  },
+  {
+   "src": [
+    "juin",
+    "June"
+   ],
+   "tgt": "Yuni",
+   "full": true
+  },
+  {
+   "src": [
+    "juillet",
+    "July"
+   ],
+   "tgt": "Yuli",
+   "full": true
+  },
+  {
+   "src": [
+    "août",
+    "August"
+   ],
+   "tgt": "Agusta",
+   "full": true
+  },
+  {
+   "src": [
+    "septembre",
+    "September"
+   ],
+   "tgt": "Satumba",
+   "full": true
+  },
+  {
+   "src": [
+    "octobre",
+    "October"
+   ],
+   "tgt": "Oktoba",
+   "full": true
+  },
+  {
+   "src": [
+    "novembre",
+    "November"
+   ],
+   "tgt": "Nuwamba",
+   "full": true
+  },
+  {
+   "src": [
+    "décembre",
+    "December"
+   ],
+   "tgt": "Disamba",
+   "full": true
+  },
   {
    "src": [
     "janv.",
@@ -101,6 +197,3946 @@
   }
  ],
  "entries": [
+  {
+   "id": "G001",
+   "src": [
+    "Account",
+    "Compte"
+   ],
+   "tgt": "Asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G002",
+   "src": [
+    "Accounts",
+    "Comptes"
+   ],
+   "tgt": "Asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G003",
+   "src": [
+    "My accounts",
+    "Mes comptes"
+   ],
+   "tgt": "Asusuna",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G004",
+   "src": [
+    "Account details",
+    "Détails du compte"
+   ],
+   "tgt": "Bayanan asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G005",
+   "src": [
+    "Account type",
+    "Type de compte"
+   ],
+   "tgt": "Nau'in asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G006",
+   "src": [
+    "Account name",
+    "Nom du compte"
+   ],
+   "tgt": "Sunan asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G007",
+   "src": [
+    "Account number",
+    "Numéro de compte"
+   ],
+   "tgt": "Lambar asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G008",
+   "src": [
+    "Savings account",
+    "Compte épargne"
+   ],
+   "tgt": "Asusun tara kuɗi",
+   "group": "Accounts and cards",
+   "review": "check"
+  },
+  {
+   "id": "G009",
+   "src": [
+    "Ledger balance",
+    "Solde comptable"
+   ],
+   "tgt": "Ragowar kuɗi a littafi",
+   "group": "Accounts and cards",
+   "review": "check"
+  },
+  {
+   "id": "G010",
+   "src": [
+    "Balance",
+    "Solde"
+   ],
+   "tgt": "Ragowar kuɗi",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G011",
+   "src": [
+    "Open an account",
+    "Ouvrir un compte"
+   ],
+   "tgt": "Buɗe asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G012",
+   "src": [
+    "Create account",
+    "Créer un compte"
+   ],
+   "tgt": "Ƙirƙiri asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G013",
+   "src": [
+    "Close account",
+    "Clôturer le compte"
+   ],
+   "tgt": "Rufe asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G014",
+   "src": [
+    "Statement",
+    "Relevé"
+   ],
+   "tgt": "Bayanin asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G015",
+   "src": [
+    "Account statement",
+    "Relevé de compte"
+   ],
+   "tgt": "Bayanin asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G016",
+   "src": [
+    "Mini statement",
+    "Mini relevé"
+   ],
+   "tgt": "Taƙaitaccen bayanin asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G017",
+   "src": [
+    "Download statement",
+    "Télécharger le relevé"
+   ],
+   "tgt": "Zazzage bayanin asusu",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G018",
+   "src": [
+    "Currency",
+    "Devise"
+   ],
+   "tgt": "Nau'in kuɗi",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G019",
+   "src": [
+    "Bank",
+    "Banque"
+   ],
+   "tgt": "Banki",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G020",
+   "src": [
+    "Branch",
+    "Agence"
+   ],
+   "tgt": "Reshe",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G021",
+   "src": [
+    "Wallet",
+    "Portefeuille"
+   ],
+   "tgt": "Jakar kuɗi",
+   "group": "Accounts and cards",
+   "review": "check"
+  },
+  {
+   "id": "G022",
+   "src": [
+    "Card",
+    "Carte"
+   ],
+   "tgt": "Kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G023",
+   "src": [
+    "Cards",
+    "Cartes"
+   ],
+   "tgt": "Kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G024",
+   "src": [
+    "Debit card",
+    "Carte de débit"
+   ],
+   "tgt": "Katin cire kuɗi",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G025",
+   "src": [
+    "Credit card",
+    "Carte de crédit"
+   ],
+   "tgt": "Katin bashi",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G026",
+   "src": [
+    "Card number",
+    "Numéro de carte"
+   ],
+   "tgt": "Lambar kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G027",
+   "src": [
+    "Expiry date",
+    "Date d'expiration"
+   ],
+   "tgt": "Ranar ƙarewa",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G028",
+   "src": [
+    "Cardholder name",
+    "Nom du titulaire"
+   ],
+   "tgt": "Sunan mai kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G029",
+   "src": [
+    "Block card",
+    "Bloquer la carte"
+   ],
+   "tgt": "Toshe kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G030",
+   "src": [
+    "Activate card",
+    "Activer la carte"
+   ],
+   "tgt": "Kunna kati",
+   "group": "Accounts and cards"
+  },
+  {
+   "id": "G031",
+   "src": [
+    "Transfer",
+    "Virement"
+   ],
+   "tgt": "Tura kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G032",
+   "src": [
+    "Transfer money",
+    "Transférer de l'argent"
+   ],
+   "tgt": "Tura kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G033",
+   "src": [
+    "Send money",
+    "Envoyer de l'argent"
+   ],
+   "tgt": "Aika kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G034",
+   "src": [
+    "Receive money",
+    "Recevoir de l'argent"
+   ],
+   "tgt": "Karɓi kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G035",
+   "src": [
+    "Request money",
+    "Demander de l'argent"
+   ],
+   "tgt": "Nemi kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G036",
+   "src": [
+    "Deposit",
+    "Dépôt"
+   ],
+   "tgt": "Saka kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G037",
+   "src": [
+    "Withdraw",
+    "Retirer"
+   ],
+   "tgt": "Cire kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G038",
+   "src": [
+    "Withdrawal",
+    "Retrait"
+   ],
+   "tgt": "Cire kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G039",
+   "src": [
+    "Pay",
+    "Payer"
+   ],
+   "tgt": "Biya",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G040",
+   "src": [
+    "Pay now",
+    "Payer maintenant"
+   ],
+   "tgt": "Biya yanzu",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G041",
+   "src": [
+    "Payment",
+    "Paiement"
+   ],
+   "tgt": "Biyan kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G042",
+   "src": [
+    "Payments",
+    "Paiements"
+   ],
+   "tgt": "Biyan kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G043",
+   "src": [
+    "Pay bills",
+    "Payer les factures"
+   ],
+   "tgt": "Biyan kuɗin ayyuka",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G044",
+   "src": [
+    "Bill payment",
+    "Paiement de facture"
+   ],
+   "tgt": "Biyan kuɗin bil",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G045",
+   "src": [
+    "Buy airtime",
+    "Acheter du crédit"
+   ],
+   "tgt": "Sayi katin waya",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G046",
+   "src": [
+    "Buy data",
+    "Acheter des données"
+   ],
+   "tgt": "Sayi data",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G047",
+   "src": [
+    "Transaction",
+    "Transaction"
+   ],
+   "tgt": "Hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G048",
+   "src": [
+    "Transactions",
+    "Transactions"
+   ],
+   "tgt": "Hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G049",
+   "src": [
+    "Transaction history",
+    "Historique des transactions"
+   ],
+   "tgt": "Tarihin hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G050",
+   "src": [
+    "Transaction details",
+    "Détails de la transaction"
+   ],
+   "tgt": "Bayanan hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G051",
+   "src": [
+    "Transaction ID",
+    "ID de transaction"
+   ],
+   "tgt": "Lambar shaidar hada-hadar",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G052",
+   "src": [
+    "Transaction reference",
+    "Référence de la transaction"
+   ],
+   "tgt": "Lambar tunani ta hada-hadar",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G053",
+   "src": [
+    "Transaction fee",
+    "Frais de transaction"
+   ],
+   "tgt": "Kuɗin caji na hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G054",
+   "src": [
+    "Transaction successful",
+    "Transaction réussie"
+   ],
+   "tgt": "An yi nasarar hada-hadar",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G055",
+   "src": [
+    "Transaction failed",
+    "Transaction échouée"
+   ],
+   "tgt": "Hada-hadar ba ta yi nasara ba",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G056",
+   "src": [
+    "Credit",
+    "Crédit"
+   ],
+   "tgt": "Kuɗin da ya shigo",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G057",
+   "src": [
+    "Debit",
+    "Débit"
+   ],
+   "tgt": "Kuɗin da ya fita",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G058",
+   "src": [
+    "Date",
+    "Date"
+   ],
+   "tgt": "Kwanan wata",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G059",
+   "src": [
+    "Time",
+    "Heure"
+   ],
+   "tgt": "Lokaci",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G060",
+   "src": [
+    "Description",
+    "Description"
+   ],
+   "tgt": "Bayani",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G061",
+   "src": [
+    "Details",
+    "Détails"
+   ],
+   "tgt": "Bayanai",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G062",
+   "src": [
+    "Beneficiaries",
+    "Bénéficiaires"
+   ],
+   "tgt": "Masu karɓa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G063",
+   "src": [
+    "Add beneficiary",
+    "Ajouter un bénéficiaire"
+   ],
+   "tgt": "Ƙara mai karɓa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G064",
+   "src": [
+    "Recipient",
+    "Destinataire"
+   ],
+   "tgt": "Mai karɓa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G065",
+   "src": [
+    "Sender",
+    "Expéditeur"
+   ],
+   "tgt": "Mai aikawa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G066",
+   "src": [
+    "From",
+    "De"
+   ],
+   "tgt": "Daga",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G067",
+   "src": [
+    "To",
+    "À"
+   ],
+   "tgt": "Zuwa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G068",
+   "src": [
+    "From account",
+    "Du compte"
+   ],
+   "tgt": "Daga asusu",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G069",
+   "src": [
+    "To account",
+    "Vers le compte"
+   ],
+   "tgt": "Zuwa asusu",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G070",
+   "src": [
+    "Purpose",
+    "Motif"
+   ],
+   "tgt": "Dalili",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G071",
+   "src": [
+    "Schedule transfer",
+    "Programmer un virement"
+   ],
+   "tgt": "Tsara lokacin tura kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G072",
+   "src": [
+    "Standing order",
+    "Ordre permanent"
+   ],
+   "tgt": "Umarnin biya na kullum",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G073",
+   "src": [
+    "Recurring",
+    "Récurrent"
+   ],
+   "tgt": "Mai maimaituwa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G074",
+   "src": [
+    "Exchange rate",
+    "Taux de change"
+   ],
+   "tgt": "Farashin musayar kuɗi",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G075",
+   "src": [
+    "Convert",
+    "Convertir"
+   ],
+   "tgt": "Canza",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G076",
+   "src": [
+    "Wallet top-up",
+    "Recharge du portefeuille"
+   ],
+   "tgt": "Ƙara kuɗi a jaka",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G077",
+   "src": [
+    "Receipt",
+    "Reçu"
+   ],
+   "tgt": "Rasit",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G078",
+   "src": [
+    "Download receipt",
+    "Télécharger le reçu"
+   ],
+   "tgt": "Zazzage rasit",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G079",
+   "src": [
+    "Invoice"
+   ],
+   "tgt": "Daftarin kuɗi",
+   "group": "Transactions and payments",
+   "review": "check"
+  },
+  {
+   "id": "G080",
+   "src": [
+    "Tax",
+    "Taxe"
+   ],
+   "tgt": "Haraji",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G081",
+   "src": [
+    "Discount",
+    "Remise"
+   ],
+   "tgt": "Rangwame",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G082",
+   "src": [
+    "Total",
+    "Total"
+   ],
+   "tgt": "Jimilla",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G083",
+   "src": [
+    "Charges"
+   ],
+   "tgt": "Kuɗin caji",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G084",
+   "src": [
+    "Limit",
+    "Limite"
+   ],
+   "tgt": "Iyaka",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G085",
+   "src": [
+    "Daily limit",
+    "Limite journalière"
+   ],
+   "tgt": "Iyakar kowace rana",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G086",
+   "src": [
+    "Minimum",
+    "Minimum"
+   ],
+   "tgt": "Mafi ƙaranci",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G087",
+   "src": [
+    "Maximum",
+    "Maximum"
+   ],
+   "tgt": "Mafi yawa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G088",
+   "src": [
+    "Electricity",
+    "Électricité"
+   ],
+   "tgt": "Wutar lantarki",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G089",
+   "src": [
+    "Water",
+    "Eau"
+   ],
+   "tgt": "Ruwa",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G090",
+   "src": [
+    "Internet",
+    "Internet"
+   ],
+   "tgt": "Intanet",
+   "group": "Transactions and payments"
+  },
+  {
+   "id": "G091",
+   "src": [
+    "Savings",
+    "Épargne"
+   ],
+   "tgt": "Ajiya",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G092",
+   "src": [
+    "Interest",
+    "Intérêts"
+   ],
+   "tgt": "Riba",
+   "group": "Savings, loans, insurance",
+   "review": "check"
+  },
+  {
+   "id": "G093",
+   "src": [
+    "Interest rate",
+    "Taux d'intérêt"
+   ],
+   "tgt": "Adadin riba",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G094",
+   "src": [
+    "Loan",
+    "Prêt"
+   ],
+   "tgt": "Lamuni",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G095",
+   "src": [
+    "Loans",
+    "Prêts"
+   ],
+   "tgt": "Lamuni",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G096",
+   "src": [
+    "Apply for a loan",
+    "Demander un prêt"
+   ],
+   "tgt": "Nemi lamuni",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G097",
+   "src": [
+    "Loan amount",
+    "Montant du prêt"
+   ],
+   "tgt": "Adadin lamuni",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G098",
+   "src": [
+    "Repayment",
+    "Remboursement"
+   ],
+   "tgt": "Biyan lamuni",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G099",
+   "src": [
+    "Due date",
+    "Date d'échéance"
+   ],
+   "tgt": "Ranar biya",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G100",
+   "src": [
+    "Overdue",
+    "En retard"
+   ],
+   "tgt": "Ya wuce wa'adi",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G101",
+   "src": [
+    "Outstanding balance",
+    "Solde restant dû"
+   ],
+   "tgt": "Ragowar bashi",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G102",
+   "src": [
+    "Insurance",
+    "Assurance"
+   ],
+   "tgt": "Inshora",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G103",
+   "src": [
+    "Investment",
+    "Investissement"
+   ],
+   "tgt": "Zuba jari",
+   "group": "Savings, loans, insurance"
+  },
+  {
+   "id": "G104",
+   "src": [
+    "Pending",
+    "En attente"
+   ],
+   "tgt": "Ana jira",
+   "group": "Status"
+  },
+  {
+   "id": "G105",
+   "src": [
+    "Processing",
+    "En cours de traitement"
+   ],
+   "tgt": "Ana aiwatarwa",
+   "group": "Status"
+  },
+  {
+   "id": "G106",
+   "src": [
+    "Completed",
+    "Terminé"
+   ],
+   "tgt": "An kammala",
+   "group": "Status"
+  },
+  {
+   "id": "G107",
+   "src": [
+    "Successful",
+    "Réussi"
+   ],
+   "tgt": "An yi nasara",
+   "group": "Status"
+  },
+  {
+   "id": "G108",
+   "src": [
+    "Failed",
+    "Échoué"
+   ],
+   "tgt": "Ba a yi nasara ba",
+   "group": "Status"
+  },
+  {
+   "id": "G109",
+   "src": [
+    "Cancelled",
+    "Annulé"
+   ],
+   "tgt": "An soke",
+   "group": "Status"
+  },
+  {
+   "id": "G110",
+   "src": [
+    "Approved",
+    "Approuvé"
+   ],
+   "tgt": "An amince",
+   "group": "Status"
+  },
+  {
+   "id": "G111",
+   "src": [
+    "Declined",
+    "Refusé"
+   ],
+   "tgt": "An ƙi",
+   "group": "Status"
+  },
+  {
+   "id": "G112",
+   "src": [
+    "Rejected",
+    "Rejeté"
+   ],
+   "tgt": "An ƙi",
+   "group": "Status"
+  },
+  {
+   "id": "G113",
+   "src": [
+    "Expired",
+    "Expiré"
+   ],
+   "tgt": "Ya ƙare",
+   "group": "Status"
+  },
+  {
+   "id": "G114",
+   "src": [
+    "Active",
+    "Actif"
+   ],
+   "tgt": "Mai aiki",
+   "group": "Status"
+  },
+  {
+   "id": "G115",
+   "src": [
+    "Inactive",
+    "Inactif"
+   ],
+   "tgt": "Ba ya aiki",
+   "group": "Status"
+  },
+  {
+   "id": "G116",
+   "src": [
+    "Blocked",
+    "Bloqué"
+   ],
+   "tgt": "An toshe",
+   "group": "Status"
+  },
+  {
+   "id": "G117",
+   "src": [
+    "Locked",
+    "Verrouillé"
+   ],
+   "tgt": "An kulle",
+   "group": "Status"
+  },
+  {
+   "id": "G118",
+   "src": [
+    "Log in",
+    "Connexion"
+   ],
+   "tgt": "Shiga",
+   "group": "Login and security"
+  },
+  {
+   "id": "G119",
+   "src": [
+    "Login"
+   ],
+   "tgt": "Shiga",
+   "group": "Login and security"
+  },
+  {
+   "id": "G120",
+   "src": [
+    "Sign in",
+    "Se connecter"
+   ],
+   "tgt": "Shiga",
+   "group": "Login and security"
+  },
+  {
+   "id": "G121",
+   "src": [
+    "Log out",
+    "Déconnexion"
+   ],
+   "tgt": "Fita",
+   "group": "Login and security"
+  },
+  {
+   "id": "G122",
+   "src": [
+    "Logout"
+   ],
+   "tgt": "Fita",
+   "group": "Login and security"
+  },
+  {
+   "id": "G123",
+   "src": [
+    "Sign out",
+    "Se déconnecter"
+   ],
+   "tgt": "Fita",
+   "group": "Login and security"
+  },
+  {
+   "id": "G124",
+   "src": [
+    "Sign up"
+   ],
+   "tgt": "Yi rajista",
+   "group": "Login and security"
+  },
+  {
+   "id": "G125",
+   "src": [
+    "Register",
+    "S'inscrire"
+   ],
+   "tgt": "Yi rajista",
+   "group": "Login and security"
+  },
+  {
+   "id": "G126",
+   "src": [
+    "Username",
+    "Nom d'utilisateur"
+   ],
+   "tgt": "Sunan mai amfani",
+   "group": "Login and security"
+  },
+  {
+   "id": "G127",
+   "src": [
+    "Password",
+    "Mot de passe"
+   ],
+   "tgt": "Kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G128",
+   "src": [
+    "Forgot password?",
+    "Mot de passe oublié ?"
+   ],
+   "tgt": "Kun manta kalmar sirri?",
+   "group": "Login and security"
+  },
+  {
+   "id": "G129",
+   "src": [
+    "Reset password",
+    "Réinitialiser le mot de passe"
+   ],
+   "tgt": "Sake saita kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G130",
+   "src": [
+    "Change password",
+    "Changer le mot de passe"
+   ],
+   "tgt": "Canja kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G131",
+   "src": [
+    "Confirm password",
+    "Confirmer le mot de passe"
+   ],
+   "tgt": "Tabbatar da kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G132",
+   "src": [
+    "New password",
+    "Nouveau mot de passe"
+   ],
+   "tgt": "Sabuwar kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G133",
+   "src": [
+    "Current password",
+    "Mot de passe actuel"
+   ],
+   "tgt": "Kalmar sirri ta yanzu",
+   "group": "Login and security"
+  },
+  {
+   "id": "G134",
+   "src": [
+    "PIN",
+    "Code PIN"
+   ],
+   "tgt": "PIN",
+   "group": "Login and security"
+  },
+  {
+   "id": "G135",
+   "src": [
+    "Enter your PIN",
+    "Saisissez votre code PIN"
+   ],
+   "tgt": "Ku shigar da PIN ɗinku",
+   "group": "Login and security"
+  },
+  {
+   "id": "G136",
+   "src": [
+    "Change PIN",
+    "Changer le code PIN"
+   ],
+   "tgt": "Canja PIN",
+   "group": "Login and security"
+  },
+  {
+   "id": "G137",
+   "src": [
+    "Verification code",
+    "Code de vérification"
+   ],
+   "tgt": "Lambar tabbatarwa",
+   "group": "Login and security"
+  },
+  {
+   "id": "G138",
+   "src": [
+    "One-time password",
+    "Mot de passe à usage unique"
+   ],
+   "tgt": "Kalmar sirri ta lokaci ɗaya",
+   "group": "Login and security"
+  },
+  {
+   "id": "G139",
+   "src": [
+    "Resend code",
+    "Renvoyer le code"
+   ],
+   "tgt": "Sake aika lamba",
+   "group": "Login and security"
+  },
+  {
+   "id": "G140",
+   "src": [
+    "Verify",
+    "Vérifier"
+   ],
+   "tgt": "Tabbatar",
+   "group": "Login and security"
+  },
+  {
+   "id": "G141",
+   "src": [
+    "Verify your identity",
+    "Vérifiez votre identité"
+   ],
+   "tgt": "Ku tabbatar da ainihin ku",
+   "group": "Login and security"
+  },
+  {
+   "id": "G142",
+   "src": [
+    "Enter the verification code",
+    "Saisissez le code de vérification"
+   ],
+   "tgt": "Ku shigar da lambar tabbatarwa",
+   "group": "Login and security"
+  },
+  {
+   "id": "G143",
+   "src": [
+    "Show password",
+    "Afficher le mot de passe"
+   ],
+   "tgt": "Nuna kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G144",
+   "src": [
+    "Hide password",
+    "Masquer le mot de passe"
+   ],
+   "tgt": "Ɓoye kalmar sirri",
+   "group": "Login and security"
+  },
+  {
+   "id": "G145",
+   "src": [
+    "Remember me",
+    "Se souvenir de moi"
+   ],
+   "tgt": "Tuna da ni",
+   "group": "Login and security"
+  },
+  {
+   "id": "G146",
+   "src": [
+    "Security alert",
+    "Alerte de sécurité"
+   ],
+   "tgt": "Gargaɗin tsaro",
+   "group": "Login and security"
+  },
+  {
+   "id": "G147",
+   "src": [
+    "Fraud alert",
+    "Alerte à la fraude"
+   ],
+   "tgt": "Gargaɗin zamba",
+   "group": "Login and security"
+  },
+  {
+   "id": "G148",
+   "src": [
+    "Suspicious activity detected",
+    "Activité suspecte détectée"
+   ],
+   "tgt": "An gano abin da ake zargi",
+   "group": "Login and security"
+  },
+  {
+   "id": "G149",
+   "src": [
+    "Your account has been locked",
+    "Votre compte a été verrouillé"
+   ],
+   "tgt": "An kulle asusun ku",
+   "group": "Login and security"
+  },
+  {
+   "id": "G150",
+   "src": [
+    "Never share your PIN or password with anyone.",
+    "Ne partagez jamais votre code PIN ou mot de passe avec personne."
+   ],
+   "tgt": "Kada ku taɓa bayar da PIN ko kalmar sirri ga kowa.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G151",
+   "src": [
+    "Never share your password or verification code.",
+    "Ne partagez jamais votre mot de passe ou votre code de vérification."
+   ],
+   "tgt": "Kada ku taɓa bayar da kalmar sirri ko lambar tabbatarwa ga kowa.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G152",
+   "src": [
+    "Our staff will never ask for your PIN.",
+    "Notre personnel ne vous demandera jamais votre code PIN."
+   ],
+   "tgt": "Ma'aikatanmu ba za su taɓa tambayar ku PIN ɗinku ba.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G153",
+   "src": [
+    "Do not share your PIN with anyone.",
+    "Ne partagez votre code PIN avec personne."
+   ],
+   "tgt": "Kada ku bayar da PIN ɗinku ga kowa.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G154",
+   "src": [
+    "If you did not make this transaction, contact your bank immediately.",
+    "Si vous n'êtes pas à l'origine de cette transaction, contactez immédiatement votre banque."
+   ],
+   "tgt": "Idan ba ku ne kuka yi wannan hada-hadar ba, ku tuntuɓi bankinku nan take.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G155",
+   "src": [
+    "Please verify the details before confirming.",
+    "Veuillez vérifier les informations avant de confirmer."
+   ],
+   "tgt": "Don Allah ku duba bayanan kafin ku tabbatar.",
+   "group": "Login and security"
+  },
+  {
+   "id": "G156",
+   "src": [
+    "Incorrect PIN",
+    "Code PIN incorrect"
+   ],
+   "tgt": "PIN ɗin ba daidai ba ne",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G157",
+   "src": [
+    "Incorrect password",
+    "Mot de passe incorrect"
+   ],
+   "tgt": "Kalmar sirri ba daidai ba ce",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G158",
+   "src": [
+    "Invalid username or password",
+    "Nom d'utilisateur ou mot de passe invalide"
+   ],
+   "tgt": "Sunan mai amfani ko kalmar sirri ba daidai ba ne",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G159",
+   "src": [
+    "Invalid amount",
+    "Montant invalide"
+   ],
+   "tgt": "Adadin bai dace ba",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G160",
+   "src": [
+    "Invalid account number",
+    "Numéro de compte invalide"
+   ],
+   "tgt": "Lambar asusu ba daidai ba ce",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G161",
+   "src": [
+    "Insufficient balance",
+    "Solde insuffisant"
+   ],
+   "tgt": "Ragowar kuɗi bai isa ba",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G162",
+   "src": [
+    "Insufficient funds",
+    "Fonds insuffisants"
+   ],
+   "tgt": "Kuɗin da ke asusu bai isa ba",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G163",
+   "src": [
+    "Transaction declined",
+    "Transaction refusée"
+   ],
+   "tgt": "An ƙi amincewa da hada-hadar",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G164",
+   "src": [
+    "Transaction failed. Please try again.",
+    "La transaction a échoué. Veuillez réessayer."
+   ],
+   "tgt": "Hada-hadar ba ta yi nasara ba. Don Allah ku sake gwadawa.",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G165",
+   "src": [
+    "Please try again",
+    "Veuillez réessayer"
+   ],
+   "tgt": "Don Allah ku sake gwadawa",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G166",
+   "src": [
+    "Please try again later",
+    "Veuillez réessayer plus tard"
+   ],
+   "tgt": "Don Allah ku sake gwadawa daga baya",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G167",
+   "src": [
+    "Something went wrong",
+    "Une erreur s'est produite"
+   ],
+   "tgt": "Akwai matsala",
+   "group": "Errors and messages",
+   "review": "check"
+  },
+  {
+   "id": "G168",
+   "src": [
+    "Service temporarily unavailable",
+    "Service temporairement indisponible"
+   ],
+   "tgt": "Ba a samun sabis a yanzu",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G169",
+   "src": [
+    "Session expired. Please log in again.",
+    "Session expirée. Veuillez vous reconnecter."
+   ],
+   "tgt": "Zaman ku ya ƙare. Don Allah ku sake shiga.",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G170",
+   "src": [
+    "This field is required",
+    "Ce champ est obligatoire"
+   ],
+   "tgt": "Dole ne a cike wannan wurin",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G171",
+   "src": [
+    "Required",
+    "Obligatoire"
+   ],
+   "tgt": "Dole",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G172",
+   "src": [
+    "Optional",
+    "Facultatif"
+   ],
+   "tgt": "Ba dole ba ne",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G173",
+   "src": [
+    "Invalid email address",
+    "Adresse e-mail invalide"
+   ],
+   "tgt": "Adireshin imel ba daidai ba ne",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G174",
+   "src": [
+    "Enter a valid phone number",
+    "Saisissez un numéro de téléphone valide"
+   ],
+   "tgt": "Ku shigar da lambar waya mai inganci",
+   "group": "Errors and messages"
+  },
+  {
+   "id": "G175",
+   "src": [
+    "Home",
+    "Accueil"
+   ],
+   "tgt": "Shafin farko",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G176",
+   "src": [
+    "Dashboard",
+    "Tableau de bord"
+   ],
+   "tgt": "Allon bayanai",
+   "group": "Navigation and common buttons",
+   "review": "check"
+  },
+  {
+   "id": "G177",
+   "src": [
+    "Settings",
+    "Paramètres"
+   ],
+   "tgt": "Saituna",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G178",
+   "src": [
+    "Profile",
+    "Profil"
+   ],
+   "tgt": "Bayanan martaba",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G179",
+   "src": [
+    "My profile",
+    "Mon profil"
+   ],
+   "tgt": "Bayanan martaba na",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G180",
+   "src": [
+    "Notifications",
+    "Notifications"
+   ],
+   "tgt": "Sanarwa",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G181",
+   "src": [
+    "Messages",
+    "Messages"
+   ],
+   "tgt": "Saƙonni",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G182",
+   "src": [
+    "Help",
+    "Aide"
+   ],
+   "tgt": "Taimako",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G183",
+   "src": [
+    "Support",
+    "Assistance"
+   ],
+   "tgt": "Tallafi",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G184",
+   "src": [
+    "Contact us",
+    "Contactez-nous"
+   ],
+   "tgt": "Tuntuɓe mu",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G185",
+   "src": [
+    "Frequently asked questions",
+    "Foire aux questions"
+   ],
+   "tgt": "Tambayoyin da ake yawan yi",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G186",
+   "src": [
+    "About us",
+    "À propos"
+   ],
+   "tgt": "Game da mu",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G187",
+   "src": [
+    "Customer service",
+    "Service client"
+   ],
+   "tgt": "Hidimar abokan ciniki",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G188",
+   "src": [
+    "Terms and conditions",
+    "Conditions générales"
+   ],
+   "tgt": "Sharuɗɗa da ƙa'idoji",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G189",
+   "src": [
+    "Privacy policy",
+    "Politique de confidentialité"
+   ],
+   "tgt": "Manufar sirri",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G190",
+   "src": [
+    "Language",
+    "Langue"
+   ],
+   "tgt": "Harshe",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G191",
+   "src": [
+    "Search",
+    "Rechercher"
+   ],
+   "tgt": "Bincika",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G192",
+   "src": [
+    "Filter",
+    "Filtrer"
+   ],
+   "tgt": "Tace",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G193",
+   "src": [
+    "Sort",
+    "Trier"
+   ],
+   "tgt": "Tsara",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G194",
+   "src": [
+    "Submit",
+    "Soumettre"
+   ],
+   "tgt": "Aika",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G195",
+   "src": [
+    "Validate",
+    "Valider"
+   ],
+   "tgt": "Tabbatar",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G196",
+   "src": [
+    "Save",
+    "Enregistrer"
+   ],
+   "tgt": "Ajiye",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G197",
+   "src": [
+    "Cancel",
+    "Annuler"
+   ],
+   "tgt": "Soke",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G198",
+   "src": [
+    "Delete",
+    "Supprimer"
+   ],
+   "tgt": "Share",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G199",
+   "src": [
+    "Close",
+    "Fermer"
+   ],
+   "tgt": "Rufe",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G200",
+   "src": [
+    "Next",
+    "Suivant"
+   ],
+   "tgt": "Na gaba",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G201",
+   "src": [
+    "Previous",
+    "Précédent"
+   ],
+   "tgt": "Na baya",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G202",
+   "src": [
+    "Yes",
+    "Oui"
+   ],
+   "tgt": "Ee",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G203",
+   "src": [
+    "No",
+    "Non"
+   ],
+   "tgt": "A'a",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G204",
+   "src": [
+    "Done"
+   ],
+   "tgt": "An gama",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G205",
+   "src": [
+    "View",
+    "Voir"
+   ],
+   "tgt": "Duba",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G206",
+   "src": [
+    "View all",
+    "Voir tout"
+   ],
+   "tgt": "Duba duka",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G207",
+   "src": [
+    "View details",
+    "Voir les détails"
+   ],
+   "tgt": "Duba cikakkun bayanai",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G208",
+   "src": [
+    "Download",
+    "Télécharger"
+   ],
+   "tgt": "Zazzage",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G209",
+   "src": [
+    "Print",
+    "Imprimer"
+   ],
+   "tgt": "Buga",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G210",
+   "src": [
+    "Share",
+    "Partager"
+   ],
+   "tgt": "Raba",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G211",
+   "src": [
+    "Copy",
+    "Copier"
+   ],
+   "tgt": "Kwafa",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G212",
+   "src": [
+    "Refresh",
+    "Actualiser"
+   ],
+   "tgt": "Sabunta",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G213",
+   "src": [
+    "Loading...",
+    "Chargement..."
+   ],
+   "tgt": "Ana lodawa...",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G214",
+   "src": [
+    "Please wait",
+    "Veuillez patienter"
+   ],
+   "tgt": "Don Allah ku jira",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G215",
+   "src": [
+    "Welcome",
+    "Bienvenue"
+   ],
+   "tgt": "Barka da zuwa",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G216",
+   "src": [
+    "Welcome back",
+    "Bon retour"
+   ],
+   "tgt": "Barka da dawowa",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G217",
+   "src": [
+    "Hello",
+    "Bonjour"
+   ],
+   "tgt": "Sannu",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G218",
+   "src": [
+    "Hi",
+    "Salut"
+   ],
+   "tgt": "Sannu",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G219",
+   "src": [
+    "Thank you",
+    "Merci"
+   ],
+   "tgt": "Mun gode",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G220",
+   "src": [
+    "Error",
+    "Erreur"
+   ],
+   "tgt": "Kuskure",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G221",
+   "src": [
+    "Warning",
+    "Avertissement"
+   ],
+   "tgt": "Gargaɗi",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G222",
+   "src": [
+    "Information",
+    "Information"
+   ],
+   "tgt": "Bayani",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G223",
+   "src": [
+    "Important",
+    "Important"
+   ],
+   "tgt": "Muhimmi",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G224",
+   "src": [
+    "Note",
+    "Note"
+   ],
+   "tgt": "Lura",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G225",
+   "src": [
+    "Select",
+    "Sélectionner"
+   ],
+   "tgt": "Zaɓi",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G226",
+   "src": [
+    "Select an option",
+    "Sélectionnez une option"
+   ],
+   "tgt": "Ku zaɓi ɗaya",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G227",
+   "src": [
+    "Show more",
+    "Voir plus"
+   ],
+   "tgt": "Nuna ƙari",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G228",
+   "src": [
+    "Show less",
+    "Voir moins"
+   ],
+   "tgt": "Nuna kaɗan",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G229",
+   "src": [
+    "Today",
+    "Aujourd'hui"
+   ],
+   "tgt": "Yau",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G230",
+   "src": [
+    "Yesterday",
+    "Hier"
+   ],
+   "tgt": "Jiya",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G231",
+   "src": [
+    "Tomorrow",
+    "Demain"
+   ],
+   "tgt": "Gobe",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G232",
+   "src": [
+    "This month",
+    "Ce mois-ci"
+   ],
+   "tgt": "Wannan wata",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G233",
+   "src": [
+    "Last month",
+    "Le mois dernier"
+   ],
+   "tgt": "Watan da ya wuce",
+   "group": "Navigation and common buttons"
+  },
+  {
+   "id": "G234",
+   "src": [
+    "Name",
+    "Nom"
+   ],
+   "tgt": "Suna",
+   "group": "Personal details"
+  },
+  {
+   "id": "G235",
+   "src": [
+    "First name",
+    "Prénom"
+   ],
+   "tgt": "Sunan farko",
+   "group": "Personal details"
+  },
+  {
+   "id": "G236",
+   "src": [
+    "Last name",
+    "Nom de famille"
+   ],
+   "tgt": "Sunan ƙarshe",
+   "group": "Personal details",
+   "review": "check"
+  },
+  {
+   "id": "G237",
+   "src": [
+    "Full name",
+    "Nom complet"
+   ],
+   "tgt": "Cikakken suna",
+   "group": "Personal details"
+  },
+  {
+   "id": "G238",
+   "src": [
+    "Email",
+    "E-mail"
+   ],
+   "tgt": "Imel",
+   "group": "Personal details"
+  },
+  {
+   "id": "G239",
+   "src": [
+    "Email address",
+    "Adresse e-mail"
+   ],
+   "tgt": "Adireshin imel",
+   "group": "Personal details"
+  },
+  {
+   "id": "G240",
+   "src": [
+    "Mobile number",
+    "Numéro de mobile"
+   ],
+   "tgt": "Lambar wayar hannu",
+   "group": "Personal details"
+  },
+  {
+   "id": "G241",
+   "src": [
+    "Address",
+    "Adresse"
+   ],
+   "tgt": "Adireshi",
+   "group": "Personal details"
+  },
+  {
+   "id": "G242",
+   "src": [
+    "City",
+    "Ville"
+   ],
+   "tgt": "Birni",
+   "group": "Personal details"
+  },
+  {
+   "id": "G243",
+   "src": [
+    "Country",
+    "Pays"
+   ],
+   "tgt": "Ƙasa",
+   "group": "Personal details"
+  },
+  {
+   "id": "G244",
+   "src": [
+    "Date of birth",
+    "Date de naissance"
+   ],
+   "tgt": "Ranar haihuwa",
+   "group": "Personal details"
+  },
+  {
+   "id": "G245",
+   "src": [
+    "Gender",
+    "Sexe"
+   ],
+   "tgt": "Jinsi",
+   "group": "Personal details"
+  },
+  {
+   "id": "G246",
+   "src": [
+    "Male",
+    "Masculin"
+   ],
+   "tgt": "Namiji",
+   "group": "Personal details"
+  },
+  {
+   "id": "G247",
+   "src": [
+    "Female",
+    "Féminin"
+   ],
+   "tgt": "Mace",
+   "group": "Personal details"
+  },
+  {
+   "id": "G248",
+   "src": [
+    "ID number",
+    "Numéro de pièce d'identité"
+   ],
+   "tgt": "Lambar shaida",
+   "group": "Personal details"
+  },
+  {
+   "id": "G249",
+   "src": [
+    "National ID card",
+    "Carte nationale d'identité"
+   ],
+   "tgt": "Katin shaidar ɗan ƙasa",
+   "group": "Personal details"
+  },
+  {
+   "id": "G250",
+   "src": [
+    "Occupation",
+    "Profession"
+   ],
+   "tgt": "Sana'a",
+   "group": "Personal details"
+  },
+  {
+   "id": "G251",
+   "src": [
+    "Upload",
+    "Téléverser"
+   ],
+   "tgt": "Ɗora",
+   "group": "Personal details"
+  },
+  {
+   "id": "G252",
+   "src": [
+    "Attach",
+    "Joindre"
+   ],
+   "tgt": "Haɗa",
+   "group": "Personal details"
+  },
+  {
+   "id": "G253",
+   "src": [
+    "Welcome, {1}",
+    "Bienvenue, {1}"
+   ],
+   "tgt": "Barka da zuwa, {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G254",
+   "src": [
+    "Welcome back, {1}",
+    "Bon retour, {1}"
+   ],
+   "tgt": "Barka da dawowa, {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G255",
+   "src": [
+    "Hi, {1}",
+    "Salut, {1}"
+   ],
+   "tgt": "Sannu, {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G256",
+   "src": [
+    "Balance: {1}",
+    "Solde : {1}"
+   ],
+   "tgt": "Ragowar kuɗi: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G257",
+   "src": [
+    "Available balance: {1}",
+    "Solde disponible : {1}"
+   ],
+   "tgt": "Ragowar kuɗi da ake iya amfani da su: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G258",
+   "src": [
+    "Amount: {1}",
+    "Montant : {1}"
+   ],
+   "tgt": "Adadi: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G259",
+   "src": [
+    "Total: {1}",
+    "Total : {1}"
+   ],
+   "tgt": "Jimilla: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G260",
+   "src": [
+    "Fee: {1}",
+    "Frais : {1}"
+   ],
+   "tgt": "Kuɗin caji: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G261",
+   "src": [
+    "Date: {1}",
+    "Date : {1}"
+   ],
+   "tgt": "Kwanan wata: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G262",
+   "src": [
+    "Status: {1}",
+    "Statut : {1}"
+   ],
+   "tgt": "Matsayi: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G263",
+   "src": [
+    "Reference: {1}",
+    "Référence : {1}"
+   ],
+   "tgt": "Lambar tunani: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G264",
+   "src": [
+    "Transaction ID: {1}",
+    "ID de transaction : {1}"
+   ],
+   "tgt": "Lambar shaidar hada-hadar: {1}",
+   "group": "Messages with a changing value",
+   "review": "check"
+  },
+  {
+   "id": "G265",
+   "src": [
+    "Account name: {1}",
+    "Nom du compte : {1}"
+   ],
+   "tgt": "Sunan asusu: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G266",
+   "src": [
+    "Interest rate: {1}",
+    "Taux d'intérêt : {1}"
+   ],
+   "tgt": "Adadin riba: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G267",
+   "src": [
+    "Due date: {1}",
+    "Date d'échéance : {1}"
+   ],
+   "tgt": "Ranar biya: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G268",
+   "src": [
+    "Last login: {1}",
+    "Dernière connexion : {1}"
+   ],
+   "tgt": "Shigar ƙarshe: {1}",
+   "group": "Messages with a changing value",
+   "review": "check"
+  },
+  {
+   "id": "G269",
+   "src": [
+    "Daily limit: {1}",
+    "Limite journalière : {1}"
+   ],
+   "tgt": "Iyakar kowace rana: {1}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G270",
+   "src": [
+    "Your balance is {1}.",
+    "Votre solde est de {1}."
+   ],
+   "tgt": "Ragowar kuɗin ku shi ne {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G271",
+   "src": [
+    "Transfer of {1} to {2} was successful.",
+    "Le transfert de {1} à {2} a réussi."
+   ],
+   "tgt": "An yi nasarar tura {1} zuwa ga {2}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G272",
+   "src": [
+    "You have received {1} from {2}.",
+    "Vous avez reçu {1} de {2}."
+   ],
+   "tgt": "Kun karɓi {1} daga {2}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G273",
+   "src": [
+    "You have sent {1} to {2}.",
+    "Vous avez envoyé {1} à {2}."
+   ],
+   "tgt": "Kun tura {1} zuwa ga {2}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G274",
+   "src": [
+    "Minimum amount is {1}.",
+    "Le montant minimum est de {1}."
+   ],
+   "tgt": "Mafi ƙarancin adadi shi ne {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G275",
+   "src": [
+    "Maximum amount is {1}.",
+    "Le montant maximum est de {1}."
+   ],
+   "tgt": "Mafi yawan adadi shi ne {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G276",
+   "src": [
+    "Amount exceeds the daily limit of {1}.",
+    "Le montant dépasse la limite journalière de {1}."
+   ],
+   "tgt": "Adadin ya wuce iyakar kowace rana ta {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G277",
+   "src": [
+    "A verification code was sent to {1}.",
+    "Un code de vérification a été envoyé au {1}."
+   ],
+   "tgt": "An aika lambar tabbatarwa zuwa {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G278",
+   "src": [
+    "Your session will expire in {1} minutes.",
+    "Votre session expirera dans {1} minutes."
+   ],
+   "tgt": "Zaman ku zai ƙare nan da mintuna {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G279",
+   "src": [
+    "Incorrect PIN. You have {1} attempts left.",
+    "Code PIN incorrect. Il vous reste {1} tentatives."
+   ],
+   "tgt": "PIN ɗin ba daidai ba ne. Kuna da sauran yunƙuri {1}.",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G280",
+   "src": [
+    "Page {1} of {2}",
+    "Page {1} sur {2}"
+   ],
+   "tgt": "Shafi na {1} cikin {2}",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "G281",
+   "src": [
+    "{1} minutes ago",
+    "Il y a {1} minutes"
+   ],
+   "tgt": "Mintuna {1} da suka wuce",
+   "group": "Messages with a changing value"
+  },
+  {
+   "id": "H001",
+   "src": [
+    "Accueil",
+    "Home"
+   ],
+   "tgt": "Gida",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H002",
+   "src": [
+    "Connexion",
+    "Log in"
+   ],
+   "tgt": "Shiga",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H003",
+   "src": [
+    "Se connecter",
+    "Sign in"
+   ],
+   "tgt": "Shiga",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H004",
+   "src": [
+    "Déconnexion",
+    "Log out"
+   ],
+   "tgt": "Fita",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H005",
+   "src": [
+    "Se déconnecter",
+    "Sign out"
+   ],
+   "tgt": "Fita",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H006",
+   "src": [
+    "Inscription",
+    "Sign up"
+   ],
+   "tgt": "Yi rajista",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H007",
+   "src": [
+    "Paramètres",
+    "Settings"
+   ],
+   "tgt": "Saituna",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H008",
+   "src": [
+    "Aide",
+    "Help"
+   ],
+   "tgt": "Taimako",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H009",
+   "src": [
+    "Nous contacter",
+    "Contact us"
+   ],
+   "tgt": "Tuntuɓe mu",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H010",
+   "src": [
+    "Langue",
+    "Language"
+   ],
+   "tgt": "Harshe",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H011",
+   "src": [
+    "Notifications",
+    "Notifications"
+   ],
+   "tgt": "Sanarwa",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H012",
+   "src": [
+    "Rechercher",
+    "Search"
+   ],
+   "tgt": "Bincika",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H013",
+   "src": [
+    "Bienvenue",
+    "Welcome"
+   ],
+   "tgt": "Barka da zuwa",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H014",
+   "src": [
+    "Bon retour",
+    "Welcome back"
+   ],
+   "tgt": "Barka da dawowa",
+   "draft": true,
+   "cat": "Navigation"
+  },
+  {
+   "id": "H015",
+   "src": [
+    "Fermer",
+    "Close"
+   ],
+   "tgt": "Rufe",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H016",
+   "src": [
+    "Annuler",
+    "Cancel"
+   ],
+   "tgt": "Soke",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H017",
+   "src": [
+    "Valider",
+    "Submit"
+   ],
+   "tgt": "Aika",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H018",
+   "src": [
+    "Enregistrer",
+    "Save"
+   ],
+   "tgt": "Ajiye",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H019",
+   "src": [
+    "Supprimer",
+    "Delete"
+   ],
+   "tgt": "Share",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H020",
+   "src": [
+    "Oui",
+    "Yes"
+   ],
+   "tgt": "Eh",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H021",
+   "src": [
+    "Non",
+    "No"
+   ],
+   "tgt": "A'a",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H022",
+   "src": [
+    "OK",
+    "OK"
+   ],
+   "tgt": "To",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H023",
+   "src": [
+    "Suivant",
+    "Next"
+   ],
+   "tgt": "Na gaba",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H024",
+   "src": [
+    "Précédent",
+    "Previous"
+   ],
+   "tgt": "Na baya",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H025",
+   "src": [
+    "Confirmer",
+    "Confirm"
+   ],
+   "tgt": "Tabbatar",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H026",
+   "src": [
+    "Envoyer",
+    "Send"
+   ],
+   "tgt": "Aika",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H027",
+   "src": [
+    "Imprimer",
+    "Print"
+   ],
+   "tgt": "Buga",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H028",
+   "src": [
+    "Télécharger",
+    "Download"
+   ],
+   "tgt": "Zazzage",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H029",
+   "src": [
+    "Partager",
+    "Share"
+   ],
+   "tgt": "Raba",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H030",
+   "src": [
+    "Copier",
+    "Copy"
+   ],
+   "tgt": "Kwafa",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H031",
+   "src": [
+    "Réessayer",
+    "Try again"
+   ],
+   "tgt": "Sake gwadawa",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H032",
+   "src": [
+    "Voir plus",
+    "See more"
+   ],
+   "tgt": "Duba ƙarin",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H033",
+   "src": [
+    "Voir tout",
+    "View all"
+   ],
+   "tgt": "Duba duka",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H034",
+   "src": [
+    "Chargement...",
+    "Loading..."
+   ],
+   "tgt": "Ana lodi...",
+   "draft": true,
+   "cat": "General buttons"
+  },
+  {
+   "id": "H035",
+   "src": [
+    "Date",
+    "Date"
+   ],
+   "tgt": "Kwanan wata",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H036",
+   "src": [
+    "Heure",
+    "Time"
+   ],
+   "tgt": "Lokaci",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H037",
+   "src": [
+    "Description",
+    "Description"
+   ],
+   "tgt": "Bayani",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H038",
+   "src": [
+    "Nom",
+    "Name"
+   ],
+   "tgt": "Suna",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H039",
+   "src": [
+    "Nom complet",
+    "Full name"
+   ],
+   "tgt": "Cikakken suna",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H040",
+   "src": [
+    "E-mail",
+    "Email"
+   ],
+   "tgt": "Imel",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H041",
+   "src": [
+    "Ce champ est obligatoire.",
+    "This field is required."
+   ],
+   "tgt": "Wajibi ne a cika wannan wuri.",
+   "draft": true,
+   "cat": "General labels"
+  },
+  {
+   "id": "H042",
+   "src": [
+    "Mot de passe",
+    "Password"
+   ],
+   "tgt": "Kalmar sirri",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H043",
+   "src": [
+    "Nom d'utilisateur",
+    "Username"
+   ],
+   "tgt": "Sunan mai amfani",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H044",
+   "src": [
+    "Mot de passe oublié ?",
+    "Forgot password?"
+   ],
+   "tgt": "Kun manta kalmar sirri?",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H045",
+   "src": [
+    "Code PIN",
+    "PIN"
+   ],
+   "tgt": "PIN",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H046",
+   "src": [
+    "Entrez votre code PIN",
+    "Enter your PIN"
+   ],
+   "tgt": "Ku shigar da PIN ɗin ku",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H047",
+   "src": [
+    "Code de vérification",
+    "Verification code"
+   ],
+   "tgt": "Lambar tabbatarwa",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H048",
+   "src": [
+    "Saisissez le code de vérification",
+    "Enter the verification code"
+   ],
+   "tgt": "Ku shigar da lambar tabbatarwa",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H049",
+   "src": [
+    "Renvoyer le code",
+    "Resend code"
+   ],
+   "tgt": "Sake aika lambar",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H050",
+   "src": [
+    "Un code de vérification a été envoyé au {1}.",
+    "A verification code was sent to {1}."
+   ],
+   "tgt": "An aika lambar tabbatarwa zuwa {1}.",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H051",
+   "src": [
+    "Ne partagez jamais votre code PIN ni votre mot de passe.",
+    "Never share your PIN or password with anyone."
+   ],
+   "tgt": "Kada ku ba wa kowa PIN ɗin ku ko kalmar sirrinku.",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H052",
+   "src": [
+    "Notre personnel ne vous demandera jamais votre code PIN.",
+    "Our staff will never ask for your PIN."
+   ],
+   "tgt": "Ma'aikatanmu ba za su taɓa tambayar ku PIN ɗin ku ba.",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H053",
+   "src": [
+    "Connexion suspecte détectée depuis un nouvel appareil.",
+    "Suspicious login detected from a new device."
+   ],
+   "tgt": "An gano shigar da ake zargi daga sabuwar na'ura.",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H054",
+   "src": [
+    "Si vous n'êtes pas à l'origine de cette transaction, contactez immédiatement votre banque.",
+    "If you did not initiate this transaction, contact your bank immediately."
+   ],
+   "tgt": "Idan ba ku ne kuka yi wannan hada-hadar ba, ku tuntuɓi bankinku nan take.",
+   "draft": true,
+   "cat": "Login and security"
+  },
+  {
+   "id": "H055",
+   "src": [
+    "Mon compte",
+    "My account"
+   ],
+   "tgt": "Asusuna",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H056",
+   "src": [
+    "Comptes",
+    "Accounts"
+   ],
+   "tgt": "Asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H057",
+   "src": [
+    "Compte épargne",
+    "Savings account"
+   ],
+   "tgt": "Asusun ajiya",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H058",
+   "src": [
+    "Nom du compte",
+    "Account name"
+   ],
+   "tgt": "Sunan asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H059",
+   "src": [
+    "Type de compte",
+    "Account type"
+   ],
+   "tgt": "Nau'in asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H060",
+   "src": [
+    "Ouvrir un compte",
+    "Open an account"
+   ],
+   "tgt": "Buɗe asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H061",
+   "src": [
+    "Créer un compte",
+    "Create an account"
+   ],
+   "tgt": "Buɗe asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H062",
+   "src": [
+    "Fermer le compte",
+    "Close account"
+   ],
+   "tgt": "Rufe asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H063",
+   "src": [
+    "Relevé de compte",
+    "Account statement"
+   ],
+   "tgt": "Bayanin asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H064",
+   "src": [
+    "Solde actuel",
+    "Current balance"
+   ],
+   "tgt": "Ragowar kuɗin yanzu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H065",
+   "src": [
+    "Afficher le solde",
+    "Show balance"
+   ],
+   "tgt": "Nuna ragowar kuɗi",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H066",
+   "src": [
+    "Masquer le solde",
+    "Hide balance"
+   ],
+   "tgt": "Ɓoye ragowar kuɗi",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H067",
+   "src": [
+    "Épargne",
+    "Savings"
+   ],
+   "tgt": "Ajiya",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H068",
+   "src": [
+    "Depuis le compte",
+    "From account"
+   ],
+   "tgt": "Daga asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H069",
+   "src": [
+    "Vers le compte",
+    "To account"
+   ],
+   "tgt": "Zuwa asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H070",
+   "src": [
+    "Choisir un compte",
+    "Select account"
+   ],
+   "tgt": "Zaɓi asusu",
+   "draft": true,
+   "cat": "Accounts"
+  },
+  {
+   "id": "H071",
+   "src": [
+    "Transactions",
+    "Transactions"
+   ],
+   "tgt": "Hada-hadar kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H072",
+   "src": [
+    "Historique des transactions",
+    "Transaction history"
+   ],
+   "tgt": "Tarihin hada-hadar kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H073",
+   "src": [
+    "Transfert",
+    "Transfer"
+   ],
+   "tgt": "Tura kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H074",
+   "src": [
+    "Dépôt",
+    "Deposit"
+   ],
+   "tgt": "Ajiye kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H075",
+   "src": [
+    "Retrait",
+    "Withdrawal"
+   ],
+   "tgt": "Cire kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H076",
+   "src": [
+    "Retirer",
+    "Withdraw"
+   ],
+   "tgt": "Cire kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H077",
+   "src": [
+    "Envoyer de l'argent",
+    "Send money"
+   ],
+   "tgt": "Aika kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H078",
+   "src": [
+    "Recevoir de l'argent",
+    "Receive money"
+   ],
+   "tgt": "Karɓi kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H079",
+   "src": [
+    "Payer",
+    "Pay"
+   ],
+   "tgt": "Biya",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H080",
+   "src": [
+    "Payer maintenant",
+    "Pay now"
+   ],
+   "tgt": "Biya yanzu",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H081",
+   "src": [
+    "Paiement",
+    "Payment"
+   ],
+   "tgt": "Biyan kuɗi",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H082",
+   "src": [
+    "Paiement de factures",
+    "Bill payment"
+   ],
+   "tgt": "Biyan kuɗin sabis",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H083",
+   "src": [
+    "Acheter du crédit",
+    "Buy airtime"
+   ],
+   "tgt": "Sayi katin waya",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H084",
+   "src": [
+    "Crédit téléphonique",
+    "Airtime"
+   ],
+   "tgt": "Katin waya",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H085",
+   "src": [
+    "Référence de la transaction",
+    "Transaction reference"
+   ],
+   "tgt": "Lambar tunani ta hada-hada",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H086",
+   "src": [
+    "Reçu",
+    "Receipt"
+   ],
+   "tgt": "Rasit",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H087",
+   "src": [
+    "Télécharger le reçu",
+    "Download receipt"
+   ],
+   "tgt": "Zazzage rasit",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H088",
+   "src": [
+    "Ajouter un bénéficiaire",
+    "Add beneficiary"
+   ],
+   "tgt": "Ƙara mai karɓa",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H089",
+   "src": [
+    "Choisir un bénéficiaire",
+    "Select a beneficiary"
+   ],
+   "tgt": "Zaɓi mai karɓa",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H090",
+   "src": [
+    "Bénéficiaires enregistrés",
+    "Saved beneficiaries"
+   ],
+   "tgt": "Masu karɓa da aka ajiye",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H091",
+   "src": [
+    "Destinataire",
+    "Recipient"
+   ],
+   "tgt": "Mai karɓa",
+   "draft": true,
+   "cat": "Transactions"
+  },
+  {
+   "id": "H092",
+   "src": [
+    "En attente",
+    "Pending"
+   ],
+   "tgt": "Ana jira",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H093",
+   "src": [
+    "Échoué",
+    "Failed"
+   ],
+   "tgt": "Bai yi nasara ba",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H094",
+   "src": [
+    "Terminé",
+    "Completed"
+   ],
+   "tgt": "An kammala",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H095",
+   "src": [
+    "Annulé",
+    "Cancelled"
+   ],
+   "tgt": "An soke",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H096",
+   "src": [
+    "Transfert réussi",
+    "Transfer successful"
+   ],
+   "tgt": "An yi nasarar tura kuɗi",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H097",
+   "src": [
+    "Transfert échoué",
+    "Transfer failed"
+   ],
+   "tgt": "Tura kuɗin bai yi nasara ba",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H098",
+   "src": [
+    "Paiement réussi",
+    "Payment successful"
+   ],
+   "tgt": "An yi nasarar biyan kuɗi",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H099",
+   "src": [
+    "Paiement échoué",
+    "Payment failed"
+   ],
+   "tgt": "Biyan kuɗin bai yi nasara ba",
+   "draft": true,
+   "cat": "Statuses"
+  },
+  {
+   "id": "H100",
+   "src": [
+    "Prêt",
+    "Loan"
+   ],
+   "tgt": "Lamuni",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H101",
+   "src": [
+    "Assurance",
+    "Insurance"
+   ],
+   "tgt": "Inshora",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H102",
+   "src": [
+    "Agence",
+    "Branch"
+   ],
+   "tgt": "Reshe",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H103",
+   "src": [
+    "Agent",
+    "Agent"
+   ],
+   "tgt": "Wakili",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H104",
+   "src": [
+    "Carte",
+    "Card"
+   ],
+   "tgt": "Kati",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H105",
+   "src": [
+    "Numéro de carte",
+    "Card number"
+   ],
+   "tgt": "Lambar kati",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H106",
+   "src": [
+    "Date d'expiration",
+    "Expiry date"
+   ],
+   "tgt": "Ranar ƙarewa",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H107",
+   "src": [
+    "Taux de change",
+    "Exchange rate"
+   ],
+   "tgt": "Farashin musayar kuɗi",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H108",
+   "src": [
+    "Devise",
+    "Currency"
+   ],
+   "tgt": "Nau'in kuɗi",
+   "draft": true,
+   "cat": "Products"
+  },
+  {
+   "id": "H109",
+   "src": [
+    "Frais de service",
+    "Service charge"
+   ],
+   "tgt": "Kuɗin sabis",
+   "draft": true,
+   "cat": "Fees and limits"
+  },
+  {
+   "id": "H110",
+   "src": [
+    "Taxe",
+    "Tax"
+   ],
+   "tgt": "Haraji",
+   "draft": true,
+   "cat": "Fees and limits"
+  },
+  {
+   "id": "H111",
+   "src": [
+    "Total",
+    "Total"
+   ],
+   "tgt": "Jimilla",
+   "draft": true,
+   "cat": "Fees and limits"
+  },
+  {
+   "id": "H112",
+   "src": [
+    "Limite journalière",
+    "Daily limit"
+   ],
+   "tgt": "Iyakar yau da kullum",
+   "draft": true,
+   "cat": "Fees and limits"
+  },
+  {
+   "id": "H113",
+   "src": [
+    "Solde insuffisant.",
+    "Insufficient balance."
+   ],
+   "tgt": "Ragowar kuɗin ku bai isa ba.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H114",
+   "src": [
+    "Montant invalide.",
+    "Invalid amount."
+   ],
+   "tgt": "Adadin bai dace ba.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H115",
+   "src": [
+    "Numéro de compte invalide.",
+    "Invalid account number."
+   ],
+   "tgt": "Lambar asusu ba daidai ba ce.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H116",
+   "src": [
+    "Code PIN incorrect.",
+    "Incorrect PIN."
+   ],
+   "tgt": "PIN ɗin ba daidai ba ne.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H117",
+   "src": [
+    "Mot de passe incorrect.",
+    "Incorrect password."
+   ],
+   "tgt": "Kalmar sirri ba daidai ba ce.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H118",
+   "src": [
+    "La transaction a échoué. Veuillez réessayer.",
+    "Transaction failed. Please try again."
+   ],
+   "tgt": "Hada-hadar ba ta yi nasara ba. Ku sake gwadawa.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H119",
+   "src": [
+    "Service temporairement indisponible.",
+    "Service temporarily unavailable."
+   ],
+   "tgt": "Ba a samun wannan sabis a yanzu. Ku sake gwadawa nan gaba.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H120",
+   "src": [
+    "Session expirée. Veuillez vous reconnecter.",
+    "Session expired. Please log in again."
+   ],
+   "tgt": "Lokacin zama ya ƙare. Ku sake shiga.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H121",
+   "src": [
+    "Votre session expirera dans {1} minutes.",
+    "Your session will expire in {1} minutes."
+   ],
+   "tgt": "Zamanku zai ƙare cikin mintuna {1}.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H122",
+   "src": [
+    "Code PIN incorrect. Il vous reste {1} tentatives.",
+    "Incorrect PIN. You have {1} attempts left."
+   ],
+   "tgt": "PIN ɗin ba daidai ba ne. Kun saura da yunƙuri {1}.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H123",
+   "src": [
+    "Le montant dépasse la limite journalière de {1}.",
+    "Amount exceeds the daily limit of {1}."
+   ],
+   "tgt": "Adadin ya wuce iyakar yau da kullum ta {1}.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H124",
+   "src": [
+    "Le montant minimum du transfert est de {1}.",
+    "Minimum transfer amount is {1}."
+   ],
+   "tgt": "Mafi ƙarancin adadin tura kuɗi shi ne {1}.",
+   "draft": true,
+   "cat": "Errors"
+  },
+  {
+   "id": "H125",
+   "src": [
+    "Conditions générales",
+    "Terms and conditions"
+   ],
+   "tgt": "Sharuɗɗa da ƙa'idoji",
+   "draft": true,
+   "cat": "Legal"
+  },
+  {
+   "id": "H126",
+   "src": [
+    "J'accepte les conditions générales",
+    "I accept the terms and conditions"
+   ],
+   "tgt": "Na amince da sharuɗɗa da ƙa'idoji",
+   "draft": true,
+   "cat": "Legal"
+  },
+  {
+   "id": "H127",
+   "src": [
+    "En continuant, vous acceptez les conditions générales.",
+    "By continuing you accept the terms and conditions."
+   ],
+   "tgt": "Ta ci gaba, kun amince da sharuɗɗa da ƙa'idoji.",
+   "draft": true,
+   "cat": "Legal"
+  },
+  {
+   "id": "H128",
+   "src": [
+    "Politique de confidentialité",
+    "Privacy policy"
+   ],
+   "tgt": "Manufar tsare sirri",
+   "draft": true,
+   "cat": "Legal"
+  },
+  {
+   "id": "H129",
+   "src": [
+    "Votre solde est de {1}.",
+    "Your balance is {1}."
+   ],
+   "tgt": "Ragowar kuɗin ku shi ne {1}.",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H130",
+   "src": [
+    "Votre transfert de {1} à {2} a réussi.",
+    "Your transfer of {1} to {2} was successful."
+   ],
+   "tgt": "An yi nasarar tura {1} zuwa ga {2}.",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H131",
+   "src": [
+    "Nouveau solde : {1}",
+    "New balance: {1}"
+   ],
+   "tgt": "Sabon ragowar kuɗi : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H132",
+   "src": [
+    "Frais : {1}",
+    "Fee: {1}"
+   ],
+   "tgt": "Kuɗin caji : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H133",
+   "src": [
+    "Total débité : {1}",
+    "Total debited: {1}"
+   ],
+   "tgt": "Jimillar da aka cire : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H134",
+   "src": [
+    "Montant : {1}",
+    "Amount: {1}"
+   ],
+   "tgt": "Adadi : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H135",
+   "src": [
+    "Total : {1}",
+    "Total: {1}"
+   ],
+   "tgt": "Jimilla : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H136",
+   "src": [
+    "Dernière mise à jour : {1}",
+    "Last updated: {1}"
+   ],
+   "tgt": "An sabunta ƙarshe : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H137",
+   "src": [
+    "Destinataire : {1}",
+    "Recipient: {1}"
+   ],
+   "tgt": "Mai karɓa : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H138",
+   "src": [
+    "Référence : {1}",
+    "Reference: {1}"
+   ],
+   "tgt": "Lambar tunani : {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H139",
+   "src": [
+    "Transferts jusqu'à {1}",
+    "Transfers up to {1}"
+   ],
+   "tgt": "Tura kuɗi har zuwa {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
+  {
+   "id": "H140",
+   "src": [
+    "Transferts au-dessus de {1}",
+    "Transfers above {1}"
+   ],
+   "tgt": "Tura kuɗi sama da {1}",
+   "draft": true,
+   "cat": "Messages with values"
+  },
   {
    "id": "T001",
    "src": [
