@@ -8,5 +8,10 @@
     "code": "pcm",
     "name": "Cameroonian Pidgin English (unvalidated)",
     "validated": false
+  },
+  {
+    "code": "baf",
+    "name": "Bafut (unvalidated)",
+    "validated": false
   }
 ]
