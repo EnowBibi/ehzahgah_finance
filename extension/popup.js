@@ -1,5 +1,5 @@
 const $ = id => document.getElementById(id);
-let state = { enabled: true, lang: "hau", showOriginal: false, userEntries: {} };
+let state = { enabled: true, lang: "etu", showOriginal: false, userEntries: {} };
 
 async function activeTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });

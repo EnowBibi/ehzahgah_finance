@@ -13,9 +13,9 @@ EHZAHGAH FINANCE is a solution to make digital financial services accessible in 
 
 After any code change: click the refresh icon on the extension card, then reload the page you're testing.
 
-## 2. Test on the SAFINUM sandbox (Hausa)
+## 2. Test on the SAFINUM sandbox (Ejagham)
 
-1. Open https://safinum.cm/hackathon-test and refresh. Hausa is the default language.
+1. Open https://safinum.cm/hackathon-test and refresh. Ejagham is the default language.
 2. The toolbar (bottom right) shows ✓ translated, ? not translated, ⚠ blocked by the Integrity Guard.
 3. Go through all 5 steps, in French and in English (the site's EN/FR button).
 4. Anything dotted-underlined is untranslated: use the popup to "Export all page strings (CSV)" and send it back.

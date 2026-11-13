@@ -4,12 +4,15 @@
   if (window.__lfLoaded) return;
   window.__lfLoaded = true;
 
-  const SKIP = "script,style,noscript,textarea,code,pre,[contenteditable=true],[data-lf-skip],#lf-host";
+  const SKIP =
+    "script,style,noscript,textarea,code,pre,[contenteditable=true],[data-lf-skip],#lf-host";
   const ATTRS = ["placeholder", "title", "aria-label"];
-  const ATTR_SEL = "[placeholder],[title],[aria-label],input[type=button],input[type=submit]";
-  const WARN_SEL = "[role=alert],.error,.warning,.alert,[class*=warn],[class*=error]";
+  const ATTR_SEL =
+    "[placeholder],[title],[aria-label],input[type=button],input[type=submit]";
+  const WARN_SEL =
+    "[role=alert],.error,.warning,.alert,[class*=warn],[class*=error]";
 
-  let settings = { enabled: true, lang: "hau", showOriginal: false };
+  let settings = { enabled: true, lang: "etu", showOriginal: false };
   let userEntries = {};
   let pack = null;
   let db = null;
@@ -20,19 +23,26 @@
   let timer = null;
 
   const read = (o, f) => (f === "#text" ? o.nodeValue : o.getAttribute(f));
-  const write = (o, f, v) => (f === "#text" ? (o.nodeValue = v) : o.setAttribute(f, v));
-  const elOf = o => (o.nodeType === 3 ? o.parentElement : o);
+  const write = (o, f, v) =>
+    f === "#text" ? (o.nodeValue = v) : o.setAttribute(f, v);
+  const elOf = (o) => (o.nodeType === 3 ? o.parentElement : o);
 
   function getRec(o, f) {
     let m = recs.get(o);
-    if (!m) { m = new Map(); recs.set(o, m); }
+    if (!m) {
+      m = new Map();
+      recs.set(o, m);
+    }
     let r = m.get(f);
-    if (!r) { r = { orig: null, out: null, shown: null, status: "" }; m.set(f, r); }
+    if (!r) {
+      r = { orig: null, out: null, shown: null, status: "" };
+      m.set(f, r);
+    }
     return r;
   }
 
   const keepSpace = (orig, text) =>
-    (orig.match(/^\s*/)[0]) + text + (orig.match(/\s*$/)[0]);
+    orig.match(/^\s*/)[0] + text + orig.match(/\s*$/)[0];
 
   function compute(rec) {
     const r = LF.translate(rec.orig, db);
@@ -46,7 +56,8 @@
   }
 
   function render(o, f, rec) {
-    const wantTranslated = settings.enabled && !settings.showOriginal && rec.out !== null;
+    const wantTranslated =
+      settings.enabled && !settings.showOriginal && rec.out !== null;
     const desired = wantTranslated ? rec.out : rec.orig;
     if (read(o, f) !== desired) write(o, f, desired);
     rec.shown = desired;
@@ -75,21 +86,24 @@
   function scan(root) {
     if (!root) return;
     if (root.nodeType === 3) {
-      if (root.parentElement && !root.parentElement.closest(SKIP)) processSlot(root, "#text");
+      if (root.parentElement && !root.parentElement.closest(SKIP))
+        processSlot(root, "#text");
       return;
     }
     if (root.nodeType !== 1 || root.closest(SKIP)) return;
     const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     let n;
     while ((n = w.nextNode())) {
-      if (n.parentElement && !n.parentElement.closest(SKIP)) processSlot(n, "#text");
+      if (n.parentElement && !n.parentElement.closest(SKIP))
+        processSlot(n, "#text");
     }
     const els = root.matches(ATTR_SEL) ? [root] : [];
     els.push(...root.querySelectorAll(ATTR_SEL));
     for (const el of els) {
       if (el.closest(SKIP)) continue;
       for (const a of ATTRS) if (el.hasAttribute(a)) processSlot(el, a);
-      if (el.matches("input[type=button],input[type=submit]")) processSlot(el, "value");
+      if (el.matches("input[type=button],input[type=submit]"))
+        processSlot(el, "value");
     }
   }
 
@@ -106,7 +120,8 @@
 
   // ---------- stats + toolbar ----------
   function stats() {
-    let ok = 0, blocked = 0;
+    let ok = 0,
+      blocked = 0;
     const unknown = new Set();
     for (const m of recs.values()) {
       for (const rec of m.values()) {
@@ -116,9 +131,13 @@
       }
     }
     return {
-      ok, blocked, unknown: [...unknown].slice(0, 50),
-      lang: settings.lang, enabled: settings.enabled,
-      packName: pack ? pack.name : "", validated: pack ? !!pack.validated : false
+      ok,
+      blocked,
+      unknown: [...unknown].slice(0, 50),
+      lang: settings.lang,
+      enabled: settings.enabled,
+      packName: pack ? pack.name : "",
+      validated: pack ? !!pack.validated : false,
     };
   }
 
@@ -130,7 +149,8 @@
         if (rec.orig === null || rec.status === "skip") continue;
         const text = LF.norm(rec.orig);
         const template = LF.templatize(text);
-        if (!seen.has(template)) seen.set(template, { template, example: text, status: rec.status });
+        if (!seen.has(template))
+          seen.set(template, { template, example: text, status: rec.status });
       }
     }
     return [...seen.values()];
@@ -141,7 +161,8 @@
     if (document.getElementById("lf-host")) return;
     const host = document.createElement("div");
     host.id = "lf-host";
-    host.style.cssText = "position:fixed;right:12px;bottom:12px;z-index:2147483647;";
+    host.style.cssText =
+      "position:fixed;right:12px;bottom:12px;z-index:2147483647;";
     const root = host.attachShadow({ mode: "closed" });
     root.innerHTML = `
       <style>
@@ -158,8 +179,11 @@
         <span class="b" id="blk" title="Blocked by Integrity Guard"></span>
         <button id="tog"></button>
       </div>`;
-    root.getElementById("tog").addEventListener("click", () =>
-      chrome.storage.local.set({ showOriginal: !settings.showOriginal }));
+    root
+      .getElementById("tog")
+      .addEventListener("click", () =>
+        chrome.storage.local.set({ showOriginal: !settings.showOriginal }),
+      );
     document.documentElement.appendChild(host);
     bar = root;
     updateBar();
@@ -169,7 +193,12 @@
     if (!bar) return;
     const s = stats();
     const set = (id, t) => (bar.getElementById(id).textContent = t);
-    set("name", s.enabled ? `EHZAHGAH FINANCE: ${s.lang}${s.validated ? "" : " (unvalidated)"}` : "EHZAHGAH FINANCE off");
+    set(
+      "name",
+      s.enabled
+        ? `EHZAHGAH FINANCE: ${s.lang}${s.validated ? "" : " (unvalidated)"}`
+        : "EHZAHGAH FINANCE off",
+    );
     set("ok", `✓ ${s.ok}`);
     set("unk", s.unknown.length ? `? ${s.unknown.length}` : "");
     set("blk", s.blocked ? `⚠ ${s.blocked}` : "");
@@ -189,7 +218,7 @@
     if (!timer) timer = setTimeout(flush, 30);
   }
 
-  const observer = new MutationObserver(ms => {
+  const observer = new MutationObserver((ms) => {
     for (const m of ms) {
       if (m.type === "childList") m.addedNodes.forEach(queue);
       else queue(m.target);
@@ -203,13 +232,27 @@
   // ---------- settings + language pack ----------
   async function loadAll() {
     const s = await chrome.storage.local.get({
-      enabled: true, lang: "hau", showOriginal: false, userEntries: {}
+      enabled: true,
+      lang: "etu",
+      showOriginal: false,
+      userEntries: {},
     });
     const langChanged = s.lang !== settings.lang || !pack;
-    settings = { enabled: s.enabled, lang: s.lang, showOriginal: s.showOriginal };
+    settings = {
+      enabled: s.enabled,
+      lang: s.lang,
+      showOriginal: s.showOriginal,
+    };
     userEntries = s.userEntries || {};
-    if (langChanged) pack = await chrome.runtime.sendMessage({ type: "getPack", lang: s.lang });
-    const entries = [...((pack && pack.entries) || []), ...(userEntries[s.lang] || [])];
+    if (langChanged)
+      pack = await chrome.runtime.sendMessage({
+        type: "getPack",
+        lang: s.lang,
+      });
+    const entries = [
+      ...((pack && pack.entries) || []),
+      ...(userEntries[s.lang] || []),
+    ];
     db = LF.compile(entries, pack && pack.keep, pack && pack.months);
   }
 
@@ -230,8 +273,11 @@
     scan(document.body);
     updateBar();
     observer.observe(document.body, {
-      subtree: true, childList: true, characterData: true,
-      attributes: true, attributeFilter: [...ATTRS, "value"]
+      subtree: true,
+      childList: true,
+      characterData: true,
+      attributes: true,
+      attributeFilter: [...ATTRS, "value"],
     });
   })();
 })();
