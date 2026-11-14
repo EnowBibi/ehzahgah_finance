@@ -12,7 +12,7 @@
   const WARN_SEL =
     "[role=alert],.error,.warning,.alert,[class*=warn],[class*=error]";
 
-  let settings = { enabled: true, lang: "etu", showOriginal: false };
+  let settings = { enabled: true, lang: "etu" };
   let userEntries = {};
   let pack = null;
   let db = null;
@@ -56,8 +56,7 @@
   }
 
   function render(o, f, rec) {
-    const wantTranslated =
-      settings.enabled && !settings.showOriginal && rec.out !== null;
+    const wantTranslated = settings.enabled && rec.out !== null;
     const desired = wantTranslated ? rec.out : rec.orig;
     if (read(o, f) !== desired) write(o, f, desired);
     rec.shown = desired;
@@ -181,9 +180,9 @@
       </div>`;
     root
       .getElementById("tog")
-      .addEventListener("click", () =>
-        chrome.storage.local.set({ showOriginal: !settings.showOriginal }),
-      );
+      .addEventListener("click", () => {
+        chrome.storage.local.set({ enabled: !settings.enabled });
+      });
     document.documentElement.appendChild(host);
     bar = root;
     updateBar();
@@ -202,7 +201,10 @@
     set("ok", `✓ ${s.ok}`);
     set("unk", s.unknown.length ? `? ${s.unknown.length}` : "");
     set("blk", s.blocked ? `⚠ ${s.blocked}` : "");
-    set("tog", settings.showOriginal ? "Show translation" : "Show original");
+    set(
+      "tog",
+      settings.enabled ? "Show original" : "Show translation",
+    );
   }
 
   // ---------- observing the page ----------
@@ -234,14 +236,12 @@
     const s = await chrome.storage.local.get({
       enabled: true,
       lang: "etu",
-      showOriginal: false,
       userEntries: {},
     });
     const langChanged = s.lang !== settings.lang || !pack;
     settings = {
       enabled: s.enabled,
       lang: s.lang,
-      showOriginal: s.showOriginal,
     };
     userEntries = s.userEntries || {};
     if (langChanged)

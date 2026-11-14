@@ -2,36 +2,242 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  :root{--ink:#12312b;--paper:#f7faf8;--line:#cfdcd6;--amber:#b45309;--red:#b91c1c}
-  body{width:340px;margin:0;padding:14px;background:var(--paper);color:var(--ink);font:14px/1.4 system-ui,sans-serif}
-  h1{font-size:16px;margin:0 0 10px}
-  label{display:block;margin:8px 0 3px;font-weight:600}
-  select,input[type=text]{width:100%;box-sizing:border-box;padding:6px;border:1px solid var(--line);border-radius:6px;font:inherit}
-  .row{display:flex;gap:8px;align-items:center;margin:6px 0}
-  .badge{font-size:12px;padding:2px 6px;border-radius:5px;background:#fef3c7;color:var(--amber)}
-  .badge.ok{background:#d1fae5;color:#065f46}
-  .stats{margin:10px 0;padding:8px;border:1px solid var(--line);border-radius:8px}
-  .item{border-top:1px solid var(--line);padding:8px 0}
-  .src{font-weight:600;word-break:break-word}
-  .err{color:var(--red);font-size:12px;min-height:14px}
-  .brand-logo{display:block;width:160px;height:auto;margin:0 auto 10px}
-  button{font:inherit;border:0;border-radius:6px;padding:5px 10px;background:var(--ink);color:#fff;cursor:pointer;margin-top:4px}
-  button.alt{background:#e8f3ef;color:var(--ink)}
-  button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #d97706}
+  :root {
+    color-scheme: light;
+    --ink: #263445;
+    --muted: #788493;
+    --paper: #fff;
+    --field: #f8fafb;
+    --line: #e5e7eb;
+    --green: #23845b;
+    --focus: #e9bd38;
+    --accent: #154879;
+    --danger: #a63b32;
+  }
+  * { box-sizing: border-box; }
+  body {
+    width: 320px;
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 12px/1.4 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  body[data-theme="dark"] {
+    color-scheme: dark;
+    --ink: #e4e9ef;
+    --muted: #9ba8b7;
+    --paper: #171d25;
+    --field: #202833;
+    --line: #303a47;
+    --green: #69c999;
+    --accent: #8db9e4;
+  }
+  .brand-panel {
+    position: relative;
+    overflow: hidden;
+    padding: 18px 20px 17px;
+    background-color: #154879;
+    background-image:
+      repeating-linear-gradient(45deg, transparent 0 16px, rgb(255 255 255 / 4%) 16px 18px, transparent 18px 34px),
+      repeating-linear-gradient(-45deg, transparent 0 16px, rgb(241 196 61 / 7%) 16px 18px, transparent 18px 34px);
+    color: #fff;
+  }
+  .brand-lockup { display: flex; align-items: center; gap: 12px; }
+  .brand-logo { display: block; width: 48px; height: 48px; padding: 4px; border-radius: 12px; background: #fff; object-fit: contain; }
+  .brand-kicker { font-family: Inter, -apple-system, sans-serif; font-size: 8px; font-weight: 650; letter-spacing: .12em; }
+  .brand-name { font-family: Inter, -apple-system, sans-serif; font-size: 14px; font-weight: 650; letter-spacing: 0; line-height: 1.2; }
+  .brand-name span { color: #f1c43d; }
+  .brand-tagline { max-width: 290px; margin: 11px 0 0; color: #e3edf6; font-size: 12px; }
+  main { padding: 9px 14px 10px; }
+  .language-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; }
+  .section-label {
+    margin: 0;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 650;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .appearance { display: inline-flex; gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 7px; background: var(--field); }
+  .appearance button {
+    display: grid;
+    width: 25px;
+    height: 22px;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .appearance button[aria-pressed="true"] { background: var(--paper); color: var(--ink); box-shadow: 0 1px 3px rgb(20 30 40 / 12%); }
+  .appearance svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+  .language-control { position: relative; }
+  select, input[type="text"] {
+    width: 100%;
+    min-height: 34px;
+    padding: 6px 32px 6px 9px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--field);
+    color: var(--ink);
+    font: inherit;
+  }
+  select { cursor: pointer; }
+  select:focus-visible, input[type="text"]:focus-visible, button:focus-visible, input[type="checkbox"]:focus-visible + .toggle-label + .switch {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .pack-dot {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 7px;
+    height: 7px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 2px var(--field);
+    pointer-events: none;
+  }
+  .pack-dot[hidden] { display: none; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .toggle-row {
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    gap: 8px;
+    margin-top: 7px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+  }
+  .toggle-row input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .toggle-label { font-size: 12px; font-weight: 550; }
+  .switch {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    flex: 0 0 auto;
+    margin-left: auto;
+    border-radius: 12px;
+    background: #c4cbd3;
+    transition: background-color .15s ease;
+  }
+  .switch::after {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+    content: "";
+    transition: transform .15s ease;
+  }
+  .toggle-row input:checked + .toggle-label + .switch { background: #328860; }
+  .toggle-row input:checked + .toggle-label + .switch::after { transform: translateX(16px); }
+  .stats {
+    display: flex;
+    min-height: 32px;
+    align-items: center;
+    gap: 0;
+    color: var(--muted);
+    font-size: 10px;
+  }
+  .stat { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .stat + .stat::before { margin: 0 7px; color: var(--line); content: "·"; }
+  .stat svg { width: 11px; height: 11px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
+  #unknown-section { padding-top: 8px; border-top: 1px solid var(--line); }
+  #unknown-section[hidden] { display: none; }
+  .help-heading { margin: 0; font-size: 11px; font-weight: 650; }
+  .help-copy { margin: 2px 0 5px; color: var(--muted); font-size: 10px; }
+  .item { padding: 8px 0; border-top: 1px solid var(--line); }
+  .src { margin-bottom: 5px; color: var(--ink); font-size: 11px; font-weight: 600; word-break: break-word; }
+  .err { min-height: 13px; margin-top: 3px; color: var(--danger); font-size: 10px; }
+  button.utility {
+    min-height: 30px;
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--field);
+    color: var(--ink);
+    font: inherit;
+    font-size: 10px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: background-color .12s ease, border-color .12s ease;
+  }
+  button.utility:hover { border-color: #b7c1cc; background: var(--paper); }
+  .item button { width: 100%; }
+  .exports {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px 9px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+  }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
 </style>
 </head>
 <body>
-  <h1><img class="brand-logo" src="logo.png" alt="EHZAHGAH FINANCE — Translation for Cameroon Languages"></h1>
-  <label for="lang">Language</label>
-  <select id="lang"></select>
-  <div class="row"><span id="badge" class="badge"></span></div>
-  <div class="row"><input type="checkbox" id="enabled"><label for="enabled" style="margin:0">Translate this page</label></div>
-  <div class="row"><input type="checkbox" id="orig"><label for="orig" style="margin:0">Show original text</label></div>
-  <div class="stats" id="stats">Open a normal web page to see live stats.</div>
-  <div id="unknown"></div>
-  <button class="alt" id="dump">Export all page strings (CSV)</button>
-  <button class="alt" id="export">Copy my taught entries (JSON)</button>
+  <header class="brand-panel">
+    <div class="brand-lockup">
+      <img class="brand-logo" src="logo.png" alt="">
+      <div>
+        <p class="brand-kicker">Finance, understood</p>
+        <h1 class="brand-name">Ehzahgah <span>Finance</span></h1>
+      </div>
+    </div>
+    <p class="brand-tagline">Digital finance in the languages of Cameroon.</p>
+  </header>
+  <main>
+    <div class="language-heading">
+      <label class="section-label" for="lang">Language</label>
+      <div class="appearance" role="group" aria-label="Color theme">
+        <button id="theme-light" type="button" aria-label="Light mode" aria-pressed="true" title="Light mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        </button>
+        <button id="theme-dark" type="button" aria-label="Dark mode" aria-pressed="false" title="Dark mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.7 8.7 0 1 0 20.2 15.1Z"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div class="language-control">
+      <select id="lang" aria-label="Translation language" aria-describedby="pack-status"></select>
+      <span class="pack-dot" id="pack-dot" hidden></span>
+      <span class="sr-only" id="pack-status" aria-live="polite"></span>
+    </div>
+    <label class="toggle-row" for="enabled">
+      <input type="checkbox" id="enabled">
+      <span class="toggle-label">Translate this page</span>
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+    <div class="stats" id="stats" role="status" aria-live="polite">Open a normal web page to see live stats.</div>
+    <section id="unknown-section" hidden>
+      <h2 class="help-heading">Help improve translations</h2>
+      <p class="help-copy">Add a translation for phrases not yet recognized.</p>
+      <div id="unknown"></div>
+    </section>
+    <div class="exports" aria-label="Export tools">
+      <button class="utility" id="dump" type="button">Export CSV</button>
+      <button class="utility" id="export" type="button">Copy JSON</button>
+    </div>
+  </main>
+  <footer class="footer"><span aria-hidden="true">🇨🇲</span><span>Built for our local languages. Designed for Cameroonians.</span></footer>
   <script src="engine.js"></script>
   <script src="popup.js"></script>
 </body>
