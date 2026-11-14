@@ -140,21 +140,6 @@
     };
   }
 
-  // Every distinct string seen on the page (for building the translation sheet).
-  function dump() {
-    const seen = new Map();
-    for (const m of recs.values()) {
-      for (const rec of m.values()) {
-        if (rec.orig === null || rec.status === "skip") continue;
-        const text = LF.norm(rec.orig);
-        const template = LF.templatize(text);
-        if (!seen.has(template))
-          seen.set(template, { template, example: text, status: rec.status });
-      }
-    }
-    return [...seen.values()];
-  }
-
   let bar = null;
   function buildBar() {
     if (document.getElementById("lf-host")) return;
@@ -264,7 +249,6 @@
 
   chrome.runtime.onMessage.addListener((msg, _s, send) => {
     if (msg && msg.type === "stats") send(stats());
-    if (msg && msg.type === "dump") send(dump());
   });
 
   (async () => {

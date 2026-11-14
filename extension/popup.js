@@ -24,6 +24,7 @@ async function refresh() {
     box.textContent = "EHZAHGAH FINANCE isn't active on this tab. Reload the page (it can't run on chrome:// pages).";
     $("pack-dot").hidden = true;
     $("pack-status").textContent = "";
+    $("unknown-count").textContent = "";
     unknownSection.hidden = true;
     return;
   }
@@ -45,6 +46,7 @@ async function refresh() {
   const language = languages.find(item => item.code === state.lang);
   $("pack-dot").hidden = !s.validated;
   $("pack-status").textContent = s.validated && language ? `${language.name} translation pack validated` : "";
+  $("unknown-count").textContent = s.unknown.length ? `(${s.unknown.length})` : "";
   unknownSection.hidden = s.unknown.length === 0;
 
   for (const text of s.unknown) {
@@ -107,24 +109,6 @@ async function main() {
       $("lang").value = state.lang;
       setTimeout(refresh, 200);
     }
-  });
-  $("export").addEventListener("click", async () => {
-    await navigator.clipboard.writeText(JSON.stringify(state.userEntries[state.lang] || [], null, 2));
-    $("export").textContent = "Copied";
-    setTimeout(() => ($("export").textContent = "Copy JSON"), 1200);
-  });
-  $("dump").addEventListener("click", async () => {
-    const tab = await activeTab();
-    let rows = null;
-    try { rows = await chrome.tabs.sendMessage(tab.id, { type: "dump" }); } catch (e) {}
-    if (!rows || !rows.length) { $("dump").textContent = "Reload page to export"; return; }
-    const q = v => `"${String(v).replace(/"/g, '""')}"`;
-    const csv = "\ufefftemplate,example,status\n" + rows.map(r => [r.template, r.example, r.status].map(q).join(",")).join("\n");
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
-    a.download = "page-strings.csv";
-    a.click();
-    $("dump").textContent = `Exported ${rows.length}`;
   });
   refresh();
 }

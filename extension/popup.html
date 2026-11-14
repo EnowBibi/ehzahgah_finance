@@ -154,12 +154,15 @@
   .stat svg { width: 11px; height: 11px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
   #unknown-section { padding-top: 8px; border-top: 1px solid var(--line); }
   #unknown-section[hidden] { display: none; }
-  .help-heading { margin: 0; font-size: 11px; font-weight: 650; }
-  .help-copy { margin: 2px 0 5px; color: var(--muted); font-size: 10px; }
+  #unknown-section summary { color: var(--ink); font-size: 11px; font-weight: 650; cursor: pointer; }
+  #unknown-section summary::marker { color: var(--muted); font-size: 10px; }
+  .help-count { margin-left: 5px; color: var(--muted); font-size: 10px; font-weight: 450; }
+  #unknown { padding-top: 5px; }
   .item { padding: 8px 0; border-top: 1px solid var(--line); }
   .src { margin-bottom: 5px; color: var(--ink); font-size: 11px; font-weight: 600; word-break: break-word; }
   .err { min-height: 13px; margin-top: 3px; color: var(--danger); font-size: 10px; }
-  button.utility {
+  .item button {
+    width: 100%;
     min-height: 30px;
     padding: 5px 8px;
     border: 1px solid var(--line);
@@ -168,19 +171,9 @@
     color: var(--ink);
     font: inherit;
     font-size: 10px;
-    font-weight: 550;
     cursor: pointer;
-    transition: background-color .12s ease, border-color .12s ease;
   }
-  button.utility:hover { border-color: #b7c1cc; background: var(--paper); }
-  .item button { width: 100%; }
-  .exports {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 7px;
-    padding-top: 8px;
-    border-top: 1px solid var(--line);
-  }
+  .item button:hover { background: var(--paper); }
   .footer {
     display: flex;
     align-items: center;
@@ -190,6 +183,7 @@
     color: var(--muted);
     font-size: 10px;
   }
+  .footer img { width: 18px; height: auto; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 2px; }
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
 </style>
 </head>
@@ -227,17 +221,12 @@
       <span class="switch" aria-hidden="true"></span>
     </label>
     <div class="stats" id="stats" role="status" aria-live="polite">Open a normal web page to see live stats.</div>
-    <section id="unknown-section" hidden>
-      <h2 class="help-heading">Help improve translations</h2>
-      <p class="help-copy">Add a translation for phrases not yet recognized.</p>
+    <details id="unknown-section" hidden>
+      <summary>Help improve translations <span class="help-count" id="unknown-count"></span></summary>
       <div id="unknown"></div>
-    </section>
-    <div class="exports" aria-label="Export tools">
-      <button class="utility" id="dump" type="button">Export CSV</button>
-      <button class="utility" id="export" type="button">Copy JSON</button>
-    </div>
+    </details>
   </main>
-  <footer class="footer"><span aria-hidden="true">🇨🇲</span><span>Built for our local languages. Designed for Cameroonians.</span></footer>
+  <footer class="footer"><img src="Flag_of_Cameroon.webp" alt="Flag of Cameroon"><span>Built for our local languages. Designed for Cameroonians.</span></footer>
   <script src="engine.js"></script>
   <script src="popup.js"></script>
 </body>
